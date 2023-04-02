@@ -214,7 +214,7 @@ local Rawr = {
 --Properties:
 
 Rawr.Rawr.Name = "Rawr"
-Rawr.Rawr.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Rawr.Rawr.Parent = game.CoreGui
 Rawr.Rawr.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Rawr.Frame.Parent = Rawr.Rawr
