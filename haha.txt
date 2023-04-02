@@ -1,4 +1,8 @@
---Gelato#0002
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local ScreenGui = {
 	ScreenGui = Instance.new("ScreenGui"),
 	Frame = Instance.new("Frame"),
@@ -1557,7 +1561,6 @@ ScreenGui.ScrollingFrame_5.BackgroundTransparency = 1.000
 ScreenGui.ScrollingFrame_5.BorderSizePixel = 0
 ScreenGui.ScrollingFrame_5.Position = UDim2.new(0.0130902613, 0, 0.0200159177, 0)
 ScreenGui.ScrollingFrame_5.Size = UDim2.new(0, 473, 0, 286)
-ScreenGui.ScrollingFrame_5.CanvasPosition = Vector2.new(0, 150)
 ScreenGui.ScrollingFrame_5.CanvasSize = UDim2.new(0, 0, 1.64999998, 0)
 ScreenGui.ScrollingFrame_5.ScrollBarThickness = 5
 
@@ -1894,7 +1897,7 @@ ScreenGui.ShadowLeftSide.SliceCenter = Rect.new(49, 49, 450, 450)
 
 -- Scripts:
 
-local function XNYUPP_fake_script() -- ScreenGui.TeleportBox.LocalScript 
+local function FAKYEF_fake_script() -- ScreenGui.TeleportBox.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui.TeleportBox)
 
 	while task.wait() do
@@ -1915,8 +1918,8 @@ local function XNYUPP_fake_script() -- ScreenGui.TeleportBox.LocalScript
 		end
 	end
 end
-coroutine.wrap(XNYUPP_fake_script)()
-local function CBEH_fake_script() -- ScreenGui.Pages.mmm - Gelato 
+coroutine.wrap(FAKYEF_fake_script)()
+local function CENW_fake_script() -- ScreenGui.Pages.mmm - Gelato 
 	local script = Instance.new('LocalScript', ScreenGui.Pages)
 
 	local Pages = script.Parent
@@ -2266,8 +2269,8 @@ local function CBEH_fake_script() -- ScreenGui.Pages.mmm - Gelato
 		loadstring(_G.boomboxb.Server.Source)()
 	end)
 end
-coroutine.wrap(CBEH_fake_script)()
-local function DJJA_fake_script() -- ScreenGui.SideHolder.Avatar / Name 
+coroutine.wrap(CENW_fake_script)()
+local function PGZNQZ_fake_script() -- ScreenGui.SideHolder.Avatar / Name 
 	local script = Instance.new('LocalScript', ScreenGui.SideHolder)
 
 	local player = game.Players.LocalPlayer
@@ -2279,8 +2282,8 @@ local function DJJA_fake_script() -- ScreenGui.SideHolder.Avatar / Name
 	script.Parent:WaitForChild('PlayerAvatar').Image = content
 	script.Parent:WaitForChild('PlayerUsername').Text = "Welcome : "..player.Name
 end
-coroutine.wrap(DJJA_fake_script)()
-local function WYVPR_fake_script() -- ScreenGui.Frame.Ball 
+coroutine.wrap(PGZNQZ_fake_script)()
+local function QITKESI_fake_script() -- ScreenGui.Frame.Ball 
 	local script = Instance.new('LocalScript', ScreenGui.Frame)
 
 	
@@ -2467,4 +2470,4 @@ local function WYVPR_fake_script() -- ScreenGui.Frame.Ball
 		Pages.TrollPage.Visible = false
 	end)
 end
-coroutine.wrap(WYVPR_fake_script)()
+coroutine.wrap(QITKESI_fake_script)()
