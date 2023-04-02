@@ -3,8 +3,8 @@
 
 -- Instances:
 
-local ScreenGui = {
-	ScreenGui = Instance.new("ScreenGui"),
+local Rawr = {
+	Rawr = Instance.new("ScreenGui"),
 	Frame = Instance.new("Frame"),
 	UIGradient = Instance.new("UIGradient"),
 	UICorner = Instance.new("UICorner"),
@@ -213,1629 +213,1630 @@ local ScreenGui = {
 
 --Properties:
 
-ScreenGui.ScreenGui.Parent = game.CoreGui
-ScreenGui.ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-ScreenGui.Frame.Parent = ScreenGui.ScreenGui
-ScreenGui.Frame.AnchorPoint = Vector2.new(0.5, 0.5)
-ScreenGui.Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
-ScreenGui.Frame.Size = UDim2.new(0, 561, 0, 375)
-
-ScreenGui.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(36, 36, 36)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(36, 36, 36))}
-ScreenGui.UIGradient.Parent = ScreenGui.Frame
-
-ScreenGui.UICorner.Parent = ScreenGui.Frame
-
-ScreenGui.Header.Name = "Header"
-ScreenGui.Header.Parent = ScreenGui.Frame
-ScreenGui.Header.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-ScreenGui.Header.Size = UDim2.new(0, 561, 0, 38)
-
-ScreenGui.UICorner_2.Parent = ScreenGui.Header
-
-ScreenGui.Line.Name = "Line"
-ScreenGui.Line.Parent = ScreenGui.Header
-ScreenGui.Line.AnchorPoint = Vector2.new(0.5, 0.5)
-ScreenGui.Line.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
-ScreenGui.Line.BorderSizePixel = 0
-ScreenGui.Line.Position = UDim2.new(0.499777198, 0, 1.02374184, 0)
-ScreenGui.Line.Size = UDim2.new(0, 560, 0, 1)
-ScreenGui.Line.ZIndex = 2
-
-ScreenGui.Title.Name = "Title"
-ScreenGui.Title.Parent = ScreenGui.Header
-ScreenGui.Title.AnchorPoint = Vector2.new(0.5, 0.5)
-ScreenGui.Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.Title.BackgroundTransparency = 1.000
-ScreenGui.Title.BorderSizePixel = 0
-ScreenGui.Title.Position = UDim2.new(0.500427723, 0, 0.493395299, 0)
-ScreenGui.Title.Size = UDim2.new(0, 101, 0, 35)
-ScreenGui.Title.Font = Enum.Font.GothamBold
-ScreenGui.Title.Text = "Iguana Hub"
-ScreenGui.Title.TextColor3 = Color3.fromRGB(200, 200, 200)
-ScreenGui.Title.TextSize = 19.000
-ScreenGui.Title.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.Pages.Name = "Pages"
-ScreenGui.Pages.Parent = ScreenGui.Frame
-ScreenGui.Pages.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-ScreenGui.Pages.BackgroundTransparency = 0.300
-ScreenGui.Pages.Position = UDim2.new(-0.342602521, 0, 0.0033307292, 0)
-ScreenGui.Pages.Size = UDim2.new(0, 173, 0, 381)
-
-ScreenGui.UICorner_3.Parent = ScreenGui.Pages
-
-ScreenGui.MainPage.Name = "MainPage"
-ScreenGui.MainPage.Parent = ScreenGui.Pages
-ScreenGui.MainPage.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-ScreenGui.MainPage.Position = UDim2.new(1.34436429, 0, 0.133858263, 0)
-ScreenGui.MainPage.Size = UDim2.new(0, 480, 0, 304)
-ScreenGui.MainPage.Visible = false
-
-ScreenGui.UICorner_4.Parent = ScreenGui.MainPage
-
-ScreenGui.ScrollingFrame.Parent = ScreenGui.MainPage
-ScreenGui.ScrollingFrame.Active = true
-ScreenGui.ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ScrollingFrame.BackgroundTransparency = 1.000
-ScreenGui.ScrollingFrame.BorderSizePixel = 0
-ScreenGui.ScrollingFrame.Position = UDim2.new(0.0130902613, 0, 0.0200159177, 0)
-ScreenGui.ScrollingFrame.Size = UDim2.new(0, 473, 0, 286)
-ScreenGui.ScrollingFrame.CanvasSize = UDim2.new(0, 0, 1.64999998, 0)
-ScreenGui.ScrollingFrame.ScrollBarThickness = 5
-
-ScreenGui.UIListLayout.Parent = ScreenGui.ScrollingFrame
-ScreenGui.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-ScreenGui.UIListLayout.Padding = UDim.new(0, 2)
-
-ScreenGui.AutoPickup.Name = "AutoPickup"
-ScreenGui.AutoPickup.Parent = ScreenGui.ScrollingFrame
-ScreenGui.AutoPickup.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.AutoPickup.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.AutoPickup.Font = Enum.Font.SourceSansBold
-ScreenGui.AutoPickup.Text = ""
-ScreenGui.AutoPickup.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.AutoPickup.TextSize = 18.000
-
-ScreenGui.UICorner_5.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_5.Parent = ScreenGui.AutoPickup
-
-ScreenGui.TextLabel.Parent = ScreenGui.AutoPickup
-ScreenGui.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel.BackgroundTransparency = 1.000
-ScreenGui.TextLabel.Position = UDim2.new(-0.0431472063, 0, -0.088888891, 0)
-ScreenGui.TextLabel.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel.Font = Enum.Font.Arial
-ScreenGui.TextLabel.Text = "Auto Pickup"
-ScreenGui.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel.TextSize = 21.000
-
-ScreenGui.TextLabel_2.Parent = ScreenGui.AutoPickup
-ScreenGui.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_2.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_2.Position = UDim2.new(0.246192887, 0, 0.400000006, 0)
-ScreenGui.TextLabel_2.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_2.Font = Enum.Font.Arial
-ScreenGui.TextLabel_2.Text = "All Tools On The Ground Will Be Picked Up When Toggled."
-ScreenGui.TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_2.TextSize = 14.000
-
-ScreenGui.ImageLabel.Parent = ScreenGui.AutoPickup
-ScreenGui.ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.CameraShake.Name = "CameraShake"
-ScreenGui.CameraShake.Parent = ScreenGui.ScrollingFrame
-ScreenGui.CameraShake.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.CameraShake.Position = UDim2.new(0, 0, 0.164335668, 0)
-ScreenGui.CameraShake.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.CameraShake.Font = Enum.Font.Arial
-ScreenGui.CameraShake.Text = " "
-ScreenGui.CameraShake.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.CameraShake.TextSize = 14.000
-
-ScreenGui.TextLabel_3.Parent = ScreenGui.CameraShake
-ScreenGui.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_3.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_3.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_3.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_3.Font = Enum.Font.Arial
-ScreenGui.TextLabel_3.Text = "Remove Camera Bob"
-ScreenGui.TextLabel_3.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_3.TextSize = 21.000
-ScreenGui.TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_4.Parent = ScreenGui.CameraShake
-ScreenGui.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_4.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_4.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_4.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_4.Font = Enum.Font.Arial
-ScreenGui.TextLabel_4.Text = "Removes The Camera Shake When You Walk / Run"
-ScreenGui.TextLabel_4.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_4.TextSize = 14.000
-ScreenGui.TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_2.Parent = ScreenGui.CameraShake
-ScreenGui.ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_2.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_2.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_2.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_2.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_6.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_6.Parent = ScreenGui.CameraShake
-
-ScreenGui.Dupe.Name = "Dupe"
-ScreenGui.Dupe.Parent = ScreenGui.ScrollingFrame
-ScreenGui.Dupe.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.Dupe.Position = UDim2.new(0, 0, 0.328671336, 0)
-ScreenGui.Dupe.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.Dupe.Font = Enum.Font.Arial
-ScreenGui.Dupe.Text = " "
-ScreenGui.Dupe.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.Dupe.TextSize = 14.000
-
-ScreenGui.TextLabel_5.Parent = ScreenGui.Dupe
-ScreenGui.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_5.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_5.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_5.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_5.Font = Enum.Font.Arial
-ScreenGui.TextLabel_5.Text = "Dupe"
-ScreenGui.TextLabel_5.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_5.TextSize = 21.000
-ScreenGui.TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_6.Parent = ScreenGui.Dupe
-ScreenGui.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_6.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_6.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_6.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_6.Font = Enum.Font.Arial
-ScreenGui.TextLabel_6.Text = "Dupes Your Tools / Cash."
-ScreenGui.TextLabel_6.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_6.TextSize = 14.000
-ScreenGui.TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_3.Parent = ScreenGui.Dupe
-ScreenGui.ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_3.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_3.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_3.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_3.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_7.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_7.Parent = ScreenGui.Dupe
-
-ScreenGui.CombatLog.Name = "CombatLog"
-ScreenGui.CombatLog.Parent = ScreenGui.ScrollingFrame
-ScreenGui.CombatLog.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.CombatLog.Position = UDim2.new(0, 0, 0.493007004, 0)
-ScreenGui.CombatLog.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.CombatLog.Font = Enum.Font.Arial
-ScreenGui.CombatLog.Text = " "
-ScreenGui.CombatLog.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.CombatLog.TextSize = 14.000
-
-ScreenGui.TextLabel_7.Parent = ScreenGui.CombatLog
-ScreenGui.TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_7.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_7.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_7.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_7.Font = Enum.Font.Arial
-ScreenGui.TextLabel_7.Text = "Remove Combat Log"
-ScreenGui.TextLabel_7.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_7.TextSize = 21.000
-ScreenGui.TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_8.Parent = ScreenGui.CombatLog
-ScreenGui.TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_8.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_8.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_8.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_8.Font = Enum.Font.Arial
-ScreenGui.TextLabel_8.Text = "Removes Your Combat Log."
-ScreenGui.TextLabel_8.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_8.TextSize = 14.000
-ScreenGui.TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_4.Parent = ScreenGui.CombatLog
-ScreenGui.ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_4.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_4.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_4.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_4.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_8.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_8.Parent = ScreenGui.CombatLog
-
-ScreenGui.RemoveDamageBlood.Name = "RemoveDamageBlood"
-ScreenGui.RemoveDamageBlood.Parent = ScreenGui.ScrollingFrame
-ScreenGui.RemoveDamageBlood.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.RemoveDamageBlood.Position = UDim2.new(0, 0, 0.657342672, 0)
-ScreenGui.RemoveDamageBlood.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.RemoveDamageBlood.Font = Enum.Font.Arial
-ScreenGui.RemoveDamageBlood.Text = " "
-ScreenGui.RemoveDamageBlood.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.RemoveDamageBlood.TextSize = 14.000
-
-ScreenGui.TextLabel_9.Parent = ScreenGui.RemoveDamageBlood
-ScreenGui.TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_9.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_9.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_9.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_9.Font = Enum.Font.Arial
-ScreenGui.TextLabel_9.Text = "Remove Blood"
-ScreenGui.TextLabel_9.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_9.TextSize = 21.000
-ScreenGui.TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_10.Parent = ScreenGui.RemoveDamageBlood
-ScreenGui.TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_10.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_10.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_10.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_10.Font = Enum.Font.Arial
-ScreenGui.TextLabel_10.Text = "Removes The Blood When You Get Damaged."
-ScreenGui.TextLabel_10.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_10.TextSize = 14.000
-ScreenGui.TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_5.Parent = ScreenGui.RemoveDamageBlood
-ScreenGui.ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_5.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_5.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_5.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_5.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_9.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_9.Parent = ScreenGui.RemoveDamageBlood
-
-ScreenGui.AntiAFK.Name = "Anti AFK"
-ScreenGui.AntiAFK.Parent = ScreenGui.ScrollingFrame
-ScreenGui.AntiAFK.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.AntiAFK.Position = UDim2.new(0, 0, 0.82167834, 0)
-ScreenGui.AntiAFK.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.AntiAFK.Font = Enum.Font.Arial
-ScreenGui.AntiAFK.Text = " "
-ScreenGui.AntiAFK.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.AntiAFK.TextSize = 14.000
-
-ScreenGui.TextLabel_11.Parent = ScreenGui.AntiAFK
-ScreenGui.TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_11.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_11.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_11.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_11.Font = Enum.Font.Arial
-ScreenGui.TextLabel_11.Text = "Anti AFK"
-ScreenGui.TextLabel_11.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_11.TextSize = 21.000
-ScreenGui.TextLabel_11.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_12.Parent = ScreenGui.AntiAFK
-ScreenGui.TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_12.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_12.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_12.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_12.Font = Enum.Font.Arial
-ScreenGui.TextLabel_12.Text = "You Won't Be Kicked When AFK"
-ScreenGui.TextLabel_12.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_12.TextSize = 14.000
-ScreenGui.TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_6.Parent = ScreenGui.AntiAFK
-ScreenGui.ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_6.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_6.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_6.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_6.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_10.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_10.Parent = ScreenGui.AntiAFK
-
-ScreenGui.ChatSpy.Name = "ChatSpy"
-ScreenGui.ChatSpy.Parent = ScreenGui.ScrollingFrame
-ScreenGui.ChatSpy.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.ChatSpy.Position = UDim2.new(0, 0, 0.986014009, 0)
-ScreenGui.ChatSpy.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.ChatSpy.Font = Enum.Font.Arial
-ScreenGui.ChatSpy.Text = " "
-ScreenGui.ChatSpy.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.ChatSpy.TextSize = 14.000
-
-ScreenGui.TextLabel_13.Parent = ScreenGui.ChatSpy
-ScreenGui.TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_13.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_13.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_13.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_13.Font = Enum.Font.Arial
-ScreenGui.TextLabel_13.Text = "Chat Spy"
-ScreenGui.TextLabel_13.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_13.TextSize = 21.000
-ScreenGui.TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_14.Parent = ScreenGui.ChatSpy
-ScreenGui.TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_14.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_14.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_14.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_14.Font = Enum.Font.Arial
-ScreenGui.TextLabel_14.Text = "Spy On Other Players Chats."
-ScreenGui.TextLabel_14.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_14.TextSize = 14.000
-ScreenGui.TextLabel_14.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_7.Parent = ScreenGui.ChatSpy
-ScreenGui.ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_7.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_7.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_7.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_7.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_11.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_11.Parent = ScreenGui.ChatSpy
-
-ScreenGui.LOWGFX.Name = "LOWGFX"
-ScreenGui.LOWGFX.Parent = ScreenGui.ScrollingFrame
-ScreenGui.LOWGFX.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.LOWGFX.Position = UDim2.new(0, 0, 1.15034962, 0)
-ScreenGui.LOWGFX.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.LOWGFX.Font = Enum.Font.Arial
-ScreenGui.LOWGFX.Text = " "
-ScreenGui.LOWGFX.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.LOWGFX.TextSize = 14.000
-
-ScreenGui.TextLabel_15.Parent = ScreenGui.LOWGFX
-ScreenGui.TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_15.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_15.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_15.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_15.Font = Enum.Font.Arial
-ScreenGui.TextLabel_15.Text = "Low GFX"
-ScreenGui.TextLabel_15.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_15.TextSize = 21.000
-ScreenGui.TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_16.Parent = ScreenGui.LOWGFX
-ScreenGui.TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_16.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_16.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_16.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_16.Font = Enum.Font.Arial
-ScreenGui.TextLabel_16.Text = "Improves Your FPS."
-ScreenGui.TextLabel_16.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_16.TextSize = 14.000
-ScreenGui.TextLabel_16.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_8.Parent = ScreenGui.LOWGFX
-ScreenGui.ImageLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_8.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_8.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_8.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_8.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_12.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_12.Parent = ScreenGui.LOWGFX
-
-ScreenGui.SkipScrren.Name = "SkipScrren"
-ScreenGui.SkipScrren.Parent = ScreenGui.ScrollingFrame
-ScreenGui.SkipScrren.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.SkipScrren.Position = UDim2.new(0, 0, 1.31468534, 0)
-ScreenGui.SkipScrren.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.SkipScrren.Font = Enum.Font.Arial
-ScreenGui.SkipScrren.Text = " "
-ScreenGui.SkipScrren.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.SkipScrren.TextSize = 14.000
-
-ScreenGui.TextLabel_17.Parent = ScreenGui.SkipScrren
-ScreenGui.TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_17.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_17.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_17.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_17.Font = Enum.Font.Arial
-ScreenGui.TextLabel_17.Text = "Skip Loading Screen"
-ScreenGui.TextLabel_17.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_17.TextSize = 21.000
-ScreenGui.TextLabel_17.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_18.Parent = ScreenGui.SkipScrren
-ScreenGui.TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_18.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_18.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_18.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_18.Font = Enum.Font.Arial
-ScreenGui.TextLabel_18.Text = "Skips The Menu / Loading Screen."
-ScreenGui.TextLabel_18.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_18.TextSize = 14.000
-ScreenGui.TextLabel_18.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_9.Parent = ScreenGui.SkipScrren
-ScreenGui.ImageLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_9.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_9.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_9.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_9.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_13.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_13.Parent = ScreenGui.SkipScrren
-
-ScreenGui.AdminGunCheck.Name = "AdminGunCheck"
-ScreenGui.AdminGunCheck.Parent = ScreenGui.ScrollingFrame
-ScreenGui.AdminGunCheck.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.AdminGunCheck.Position = UDim2.new(0, 0, 1.47902095, 0)
-ScreenGui.AdminGunCheck.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.AdminGunCheck.Font = Enum.Font.Arial
-ScreenGui.AdminGunCheck.Text = " "
-ScreenGui.AdminGunCheck.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.AdminGunCheck.TextSize = 14.000
-
-ScreenGui.TextLabel_19.Parent = ScreenGui.AdminGunCheck
-ScreenGui.TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_19.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_19.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_19.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_19.Font = Enum.Font.Arial
-ScreenGui.TextLabel_19.Text = "Safe Checker"
-ScreenGui.TextLabel_19.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_19.TextSize = 21.000
-ScreenGui.TextLabel_19.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_20.Parent = ScreenGui.AdminGunCheck
-ScreenGui.TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_20.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_20.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_20.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_20.Font = Enum.Font.Arial
-ScreenGui.TextLabel_20.Text = "Checks For Admin Guns."
-ScreenGui.TextLabel_20.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_20.TextSize = 14.000
-ScreenGui.TextLabel_20.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_10.Parent = ScreenGui.AdminGunCheck
-ScreenGui.ImageLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_10.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_10.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_10.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_10.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_14.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_14.Parent = ScreenGui.AdminGunCheck
-
-ScreenGui.ButtonsFolder.Name = "ButtonsFolder"
-ScreenGui.ButtonsFolder.Parent = ScreenGui.Pages
-
-ScreenGui.TrollButton.Name = "TrollButton"
-ScreenGui.TrollButton.Parent = ScreenGui.ButtonsFolder
-ScreenGui.TrollButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TrollButton.BackgroundTransparency = 1.000
-ScreenGui.TrollButton.Position = UDim2.new(0.0560892783, 0, 0.419947505, 0)
-ScreenGui.TrollButton.Size = UDim2.new(0, 63, 0, 22)
-ScreenGui.TrollButton.Font = Enum.Font.SourceSansBold
-ScreenGui.TrollButton.Text = "Troll"
-ScreenGui.TrollButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TrollButton.TextSize = 21.000
-
-ScreenGui.ModsButton.Name = "ModsButton"
-ScreenGui.ModsButton.Parent = ScreenGui.ButtonsFolder
-ScreenGui.ModsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ModsButton.BackgroundTransparency = 1.000
-ScreenGui.ModsButton.Position = UDim2.new(0.148574919, 0, 0.338582665, 0)
-ScreenGui.ModsButton.Size = UDim2.new(0, 138, 0, 22)
-ScreenGui.ModsButton.Font = Enum.Font.SourceSansBold
-ScreenGui.ModsButton.Text = "Gun Modifications"
-ScreenGui.ModsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ModsButton.TextSize = 21.000
-
-ScreenGui.PlayerButton.Name = "PlayerButton"
-ScreenGui.PlayerButton.Parent = ScreenGui.ButtonsFolder
-ScreenGui.PlayerButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.PlayerButton.BackgroundTransparency = 1.000
-ScreenGui.PlayerButton.Position = UDim2.new(0.148574919, 0, 0.181102365, 0)
-ScreenGui.PlayerButton.Size = UDim2.new(0, 50, 0, 25)
-ScreenGui.PlayerButton.Font = Enum.Font.SourceSansBold
-ScreenGui.PlayerButton.Text = "Player"
-ScreenGui.PlayerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.PlayerButton.TextSize = 21.000
-
-ScreenGui.MiscButton.Name = "MiscButton"
-ScreenGui.MiscButton.Parent = ScreenGui.ButtonsFolder
-ScreenGui.MiscButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.MiscButton.BackgroundTransparency = 1.000
-ScreenGui.MiscButton.Position = UDim2.new(0.0849709958, 0, 0.262467206, 0)
-ScreenGui.MiscButton.Size = UDim2.new(0, 54, 0, 23)
-ScreenGui.MiscButton.Font = Enum.Font.SourceSansBold
-ScreenGui.MiscButton.Text = "Misc"
-ScreenGui.MiscButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.MiscButton.TextSize = 21.000
-
-ScreenGui.CreditsButton.Name = "CreditsButton"
-ScreenGui.CreditsButton.Parent = ScreenGui.ButtonsFolder
-ScreenGui.CreditsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.CreditsButton.BackgroundTransparency = 1.000
-ScreenGui.CreditsButton.Position = UDim2.new(0.108112402, 0, 0.501312315, 0)
-ScreenGui.CreditsButton.Size = UDim2.new(0, 63, 0, 20)
-ScreenGui.CreditsButton.Font = Enum.Font.SourceSansBold
-ScreenGui.CreditsButton.Text = "Credits"
-ScreenGui.CreditsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.CreditsButton.TextSize = 21.000
-
-ScreenGui.MainButton.Name = "MainButton"
-ScreenGui.MainButton.Parent = ScreenGui.ButtonsFolder
-ScreenGui.MainButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.MainButton.BackgroundTransparency = 1.000
-ScreenGui.MainButton.Position = UDim2.new(0.0792106688, 0, 0.0944881886, 0)
-ScreenGui.MainButton.Size = UDim2.new(0, 63, 0, 33)
-ScreenGui.MainButton.Font = Enum.Font.SourceSansBold
-ScreenGui.MainButton.Text = "Main"
-ScreenGui.MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.MainButton.TextSize = 21.000
-
-ScreenGui.CreditsPage.Name = "CreditsPage"
-ScreenGui.CreditsPage.Parent = ScreenGui.Pages
-ScreenGui.CreditsPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.CreditsPage.BackgroundTransparency = 1.000
-ScreenGui.CreditsPage.Position = UDim2.new(1.11315036, 0, 0.144356951, 0)
-ScreenGui.CreditsPage.Size = UDim2.new(0, 560, 0, 316)
-ScreenGui.CreditsPage.Visible = false
-
-ScreenGui.UICorner_15.Parent = ScreenGui.CreditsPage
-
-ScreenGui.TextLabel_21.Parent = ScreenGui.CreditsPage
-ScreenGui.TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_21.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_21.Position = UDim2.new(0.321428567, 0, 0.382911384, 0)
-ScreenGui.TextLabel_21.Size = UDim2.new(0, 200, 0, 50)
-ScreenGui.TextLabel_21.Font = Enum.Font.Gotham
-ScreenGui.TextLabel_21.Text = "Iguana Hub Created By Gelato#0002"
-ScreenGui.TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_21.TextSize = 28.000
-
-ScreenGui.Marker.Name = "Marker"
-ScreenGui.Marker.Parent = ScreenGui.Pages
-
-ScreenGui.Slider.Name = "Slider"
-ScreenGui.Slider.Parent = ScreenGui.Marker
-ScreenGui.Slider.BackgroundColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.Slider.BorderSizePixel = 0
-ScreenGui.Slider.Position = UDim2.new(0, 0, 0.105999999, 0)
-ScreenGui.Slider.Size = UDim2.new(0, 2, 0, 20)
-
-ScreenGui.MiscPage.Name = "MiscPage"
-ScreenGui.MiscPage.Parent = ScreenGui.Pages
-ScreenGui.MiscPage.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-ScreenGui.MiscPage.Position = UDim2.new(1.34436429, 0, 0.133858263, 0)
-ScreenGui.MiscPage.Size = UDim2.new(0, 480, 0, 304)
-
-ScreenGui.UICorner_16.Parent = ScreenGui.MiscPage
-
-ScreenGui.ScrollingFrame_2.Parent = ScreenGui.MiscPage
-ScreenGui.ScrollingFrame_2.Active = true
-ScreenGui.ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ScrollingFrame_2.BackgroundTransparency = 1.000
-ScreenGui.ScrollingFrame_2.BorderSizePixel = 0
-ScreenGui.ScrollingFrame_2.Position = UDim2.new(0.0130902613, 0, 0.0200159177, 0)
-ScreenGui.ScrollingFrame_2.Size = UDim2.new(0, 473, 0, 286)
-ScreenGui.ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 1.64999998, 0)
-ScreenGui.ScrollingFrame_2.ScrollBarThickness = 5
-
-ScreenGui.UIListLayout_2.Parent = ScreenGui.ScrollingFrame_2
-ScreenGui.UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-ScreenGui.UIListLayout_2.Padding = UDim.new(0, 2)
-
-ScreenGui.ESPButton.Name = "ESPButton"
-ScreenGui.ESPButton.Parent = ScreenGui.ScrollingFrame_2
-ScreenGui.ESPButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.ESPButton.Position = UDim2.new(0.037558686, 0, 0.0564524755, 0)
-ScreenGui.ESPButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.ESPButton.Font = Enum.Font.Arial
-ScreenGui.ESPButton.Text = " "
-ScreenGui.ESPButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.ESPButton.TextSize = 14.000
-
-ScreenGui.TextLabel_22.Parent = ScreenGui.ESPButton
-ScreenGui.TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_22.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_22.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_22.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_22.Font = Enum.Font.Arial
-ScreenGui.TextLabel_22.Text = "ESP"
-ScreenGui.TextLabel_22.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_22.TextSize = 21.000
-ScreenGui.TextLabel_22.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_23.Parent = ScreenGui.ESPButton
-ScreenGui.TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_23.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_23.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_23.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_23.Font = Enum.Font.Arial
-ScreenGui.TextLabel_23.Text = "Tracks Other Players."
-ScreenGui.TextLabel_23.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_23.TextSize = 14.000
-ScreenGui.TextLabel_23.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_11.Parent = ScreenGui.ESPButton
-ScreenGui.ImageLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_11.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_11.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_11.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_11.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_17.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_17.Parent = ScreenGui.ESPButton
-
-ScreenGui.HitboxButton.Name = "HitboxButton"
-ScreenGui.HitboxButton.Parent = ScreenGui.ScrollingFrame_2
-ScreenGui.HitboxButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.HitboxButton.Position = UDim2.new(0.037558686, 0, 0.0564524755, 0)
-ScreenGui.HitboxButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.HitboxButton.Font = Enum.Font.Arial
-ScreenGui.HitboxButton.Text = " "
-ScreenGui.HitboxButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.HitboxButton.TextSize = 14.000
-
-ScreenGui.TextLabel_24.Parent = ScreenGui.HitboxButton
-ScreenGui.TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_24.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_24.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_24.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_24.Font = Enum.Font.Arial
-ScreenGui.TextLabel_24.Text = "Hitbox Expander"
-ScreenGui.TextLabel_24.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_24.TextSize = 21.000
-ScreenGui.TextLabel_24.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_25.Parent = ScreenGui.HitboxButton
-ScreenGui.TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_25.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_25.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_25.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_25.Font = Enum.Font.Arial
-ScreenGui.TextLabel_25.Text = "Makes Other Players HitBoxes Bigger."
-ScreenGui.TextLabel_25.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_25.TextSize = 14.000
-ScreenGui.TextLabel_25.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_12.Parent = ScreenGui.HitboxButton
-ScreenGui.ImageLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_12.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_12.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_12.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_12.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_18.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_18.Parent = ScreenGui.HitboxButton
-
-ScreenGui.PlayerKillerButton.Name = "PlayerKillerButton"
-ScreenGui.PlayerKillerButton.Parent = ScreenGui.ScrollingFrame_2
-ScreenGui.PlayerKillerButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.PlayerKillerButton.Position = UDim2.new(0, 0, 0.328671336, 0)
-ScreenGui.PlayerKillerButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.PlayerKillerButton.Font = Enum.Font.SourceSansBold
-ScreenGui.PlayerKillerButton.Text = ""
-ScreenGui.PlayerKillerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.PlayerKillerButton.TextSize = 18.000
-
-ScreenGui.UICorner_19.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_19.Parent = ScreenGui.PlayerKillerButton
-
-ScreenGui.TextLabel_26.Parent = ScreenGui.PlayerKillerButton
-ScreenGui.TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_26.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_26.Position = UDim2.new(0.0355329961, 0, 0, 0)
-ScreenGui.TextLabel_26.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_26.Font = Enum.Font.Arial
-ScreenGui.TextLabel_26.Text = "Kill Player With Fist"
-ScreenGui.TextLabel_26.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_26.TextSize = 21.000
-
-ScreenGui.TextLabel_27.Parent = ScreenGui.PlayerKillerButton
-ScreenGui.TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_27.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_27.Position = UDim2.new(0.0507614166, 0, 0.377777785, 0)
-ScreenGui.TextLabel_27.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_27.Font = Enum.Font.Arial
-ScreenGui.TextLabel_27.Text = "Kills The Player You Choose."
-ScreenGui.TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_27.TextSize = 14.000
-
-ScreenGui.ImageLabel_13.Parent = ScreenGui.PlayerKillerButton
-ScreenGui.ImageLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_13.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_13.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_13.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_13.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.PlayerKillerBox.Name = "PlayerKillerBox"
-ScreenGui.PlayerKillerBox.Parent = ScreenGui.ScrollingFrame_2
-ScreenGui.PlayerKillerBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.PlayerKillerBox.Position = UDim2.new(0, 0, 0.493007004, 0)
-ScreenGui.PlayerKillerBox.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.PlayerKillerBox.Font = Enum.Font.Arial
-ScreenGui.PlayerKillerBox.Text = "Player Name Here."
-ScreenGui.PlayerKillerBox.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.PlayerKillerBox.TextSize = 21.000
-ScreenGui.PlayerKillerBox.TextWrapped = true
-
-ScreenGui.UICorner_20.CornerRadius = UDim.new(0.0900000036, 0)
-ScreenGui.UICorner_20.Parent = ScreenGui.PlayerKillerBox
-
-ScreenGui.SoundRemoverButton.Name = "SoundRemoverButton"
-ScreenGui.SoundRemoverButton.Parent = ScreenGui.ScrollingFrame_2
-ScreenGui.SoundRemoverButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.SoundRemoverButton.Position = UDim2.new(0, 0, 0.82167834, 0)
-ScreenGui.SoundRemoverButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.SoundRemoverButton.Font = Enum.Font.Arial
-ScreenGui.SoundRemoverButton.Text = " "
-ScreenGui.SoundRemoverButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.SoundRemoverButton.TextSize = 14.000
-
-ScreenGui.TextLabel_28.Parent = ScreenGui.SoundRemoverButton
-ScreenGui.TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_28.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_28.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_28.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_28.Font = Enum.Font.Arial
-ScreenGui.TextLabel_28.Text = "Remove Traffic Sounds"
-ScreenGui.TextLabel_28.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_28.TextSize = 21.000
-ScreenGui.TextLabel_28.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_29.Parent = ScreenGui.SoundRemoverButton
-ScreenGui.TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_29.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_29.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_29.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_29.Font = Enum.Font.Arial
-ScreenGui.TextLabel_29.Text = "Removes The Background Noise."
-ScreenGui.TextLabel_29.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_29.TextSize = 14.000
-ScreenGui.TextLabel_29.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_14.Parent = ScreenGui.SoundRemoverButton
-ScreenGui.ImageLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_14.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_14.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_14.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_14.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_21.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_21.Parent = ScreenGui.SoundRemoverButton
-
-ScreenGui.ModsPage.Name = "ModsPage"
-ScreenGui.ModsPage.Parent = ScreenGui.Pages
-ScreenGui.ModsPage.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-ScreenGui.ModsPage.Position = UDim2.new(1.34436429, 0, 0.133858263, 0)
-ScreenGui.ModsPage.Size = UDim2.new(0, 480, 0, 304)
-ScreenGui.ModsPage.Visible = false
-
-ScreenGui.UICorner_22.Parent = ScreenGui.ModsPage
-
-ScreenGui.ScrollingFrame_3.Parent = ScreenGui.ModsPage
-ScreenGui.ScrollingFrame_3.Active = true
-ScreenGui.ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ScrollingFrame_3.BackgroundTransparency = 1.000
-ScreenGui.ScrollingFrame_3.BorderSizePixel = 0
-ScreenGui.ScrollingFrame_3.Position = UDim2.new(0.0130902613, 0, 0.0200159177, 0)
-ScreenGui.ScrollingFrame_3.Size = UDim2.new(0, 473, 0, 286)
-ScreenGui.ScrollingFrame_3.CanvasSize = UDim2.new(0, 0, 1.64999998, 0)
-ScreenGui.ScrollingFrame_3.ScrollBarThickness = 5
-
-ScreenGui.UIListLayout_3.Parent = ScreenGui.ScrollingFrame_3
-ScreenGui.UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
-ScreenGui.UIListLayout_3.Padding = UDim.new(0, 2)
-
-ScreenGui.InfiniteAmmoButton.Name = "InfiniteAmmoButton"
-ScreenGui.InfiniteAmmoButton.Parent = ScreenGui.ScrollingFrame_3
-ScreenGui.InfiniteAmmoButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.InfiniteAmmoButton.Position = UDim2.new(0, 0, 0.657342672, 0)
-ScreenGui.InfiniteAmmoButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.InfiniteAmmoButton.Font = Enum.Font.Arial
-ScreenGui.InfiniteAmmoButton.Text = " "
-ScreenGui.InfiniteAmmoButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.InfiniteAmmoButton.TextSize = 14.000
-
-ScreenGui.TextLabel_30.Parent = ScreenGui.InfiniteAmmoButton
-ScreenGui.TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_30.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_30.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_30.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_30.Font = Enum.Font.Arial
-ScreenGui.TextLabel_30.Text = "Infinite Ammo"
-ScreenGui.TextLabel_30.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_30.TextSize = 21.000
-ScreenGui.TextLabel_30.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_31.Parent = ScreenGui.InfiniteAmmoButton
-ScreenGui.TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_31.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_31.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_31.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_31.Font = Enum.Font.Arial
-ScreenGui.TextLabel_31.Text = "Gives Your Gun Infinite Ammo."
-ScreenGui.TextLabel_31.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_31.TextSize = 14.000
-ScreenGui.TextLabel_31.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_15.Parent = ScreenGui.InfiniteAmmoButton
-ScreenGui.ImageLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_15.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_15.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_15.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_15.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_23.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_23.Parent = ScreenGui.InfiniteAmmoButton
-
-ScreenGui.RecoilButton.Name = "RecoilButton"
-ScreenGui.RecoilButton.Parent = ScreenGui.ScrollingFrame_3
-ScreenGui.RecoilButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.RecoilButton.Position = UDim2.new(0, 0, 0.657342672, 0)
-ScreenGui.RecoilButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.RecoilButton.Font = Enum.Font.Arial
-ScreenGui.RecoilButton.Text = " "
-ScreenGui.RecoilButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.RecoilButton.TextSize = 14.000
-
-ScreenGui.TextLabel_32.Parent = ScreenGui.RecoilButton
-ScreenGui.TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_32.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_32.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_32.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_32.Font = Enum.Font.Arial
-ScreenGui.TextLabel_32.Text = "Recoil Customization"
-ScreenGui.TextLabel_32.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_32.TextSize = 21.000
-ScreenGui.TextLabel_32.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_33.Parent = ScreenGui.RecoilButton
-ScreenGui.TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_33.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_33.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_33.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_33.Font = Enum.Font.Arial
-ScreenGui.TextLabel_33.Text = "Customize Recoil On Guns."
-ScreenGui.TextLabel_33.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_33.TextSize = 14.000
-ScreenGui.TextLabel_33.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_16.Parent = ScreenGui.RecoilButton
-ScreenGui.ImageLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_16.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_16.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_16.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_16.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_24.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_24.Parent = ScreenGui.RecoilButton
-
-ScreenGui.RecoilBox.Name = "RecoilBox"
-ScreenGui.RecoilBox.Parent = ScreenGui.ScrollingFrame_3
-ScreenGui.RecoilBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.RecoilBox.Position = UDim2.new(0, 0, 0.493007004, 0)
-ScreenGui.RecoilBox.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.RecoilBox.Font = Enum.Font.Arial
-ScreenGui.RecoilBox.Text = "Amount Of Recoil You Want Here."
-ScreenGui.RecoilBox.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.RecoilBox.TextSize = 21.000
-ScreenGui.RecoilBox.TextWrapped = true
-
-ScreenGui.UICorner_25.CornerRadius = UDim.new(0.0900000036, 0)
-ScreenGui.UICorner_25.Parent = ScreenGui.RecoilBox
-
-ScreenGui.PlayerPage.Name = "PlayerPage"
-ScreenGui.PlayerPage.Parent = ScreenGui.Pages
-ScreenGui.PlayerPage.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-ScreenGui.PlayerPage.Position = UDim2.new(1.34436429, 0, 0.133858263, 0)
-ScreenGui.PlayerPage.Size = UDim2.new(0, 480, 0, 304)
-ScreenGui.PlayerPage.Visible = false
-
-ScreenGui.UICorner_26.Parent = ScreenGui.PlayerPage
-
-ScreenGui.ScrollingFrame_4.Parent = ScreenGui.PlayerPage
-ScreenGui.ScrollingFrame_4.Active = true
-ScreenGui.ScrollingFrame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ScrollingFrame_4.BackgroundTransparency = 1.000
-ScreenGui.ScrollingFrame_4.BorderSizePixel = 0
-ScreenGui.ScrollingFrame_4.Position = UDim2.new(0.0130902613, 0, 0.0200159177, 0)
-ScreenGui.ScrollingFrame_4.Size = UDim2.new(0, 473, 0, 286)
-ScreenGui.ScrollingFrame_4.CanvasPosition = Vector2.new(0, 215.600006)
-ScreenGui.ScrollingFrame_4.CanvasSize = UDim2.new(0, 0, 1.64999998, 0)
-ScreenGui.ScrollingFrame_4.ScrollBarThickness = 5
-
-ScreenGui.UIListLayout_4.Parent = ScreenGui.ScrollingFrame_4
-ScreenGui.UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
-ScreenGui.UIListLayout_4.Padding = UDim.new(0, 2)
-
-ScreenGui.CustomLevelButton.Name = "CustomLevelButton"
-ScreenGui.CustomLevelButton.Parent = ScreenGui.ScrollingFrame_4
-ScreenGui.CustomLevelButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.CustomLevelButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.CustomLevelButton.Font = Enum.Font.Arial
-ScreenGui.CustomLevelButton.Text = " "
-ScreenGui.CustomLevelButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.CustomLevelButton.TextSize = 14.000
-
-ScreenGui.TextLabel_34.Parent = ScreenGui.CustomLevelButton
-ScreenGui.TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_34.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_34.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
-ScreenGui.TextLabel_34.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_34.Font = Enum.Font.Arial
-ScreenGui.TextLabel_34.Text = "Custom Level"
-ScreenGui.TextLabel_34.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_34.TextSize = 21.000
-ScreenGui.TextLabel_34.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_35.Parent = ScreenGui.CustomLevelButton
-ScreenGui.TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_35.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_35.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_35.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_35.Font = Enum.Font.Arial
-ScreenGui.TextLabel_35.Text = "Gives You A Custom Level. (CLIENT SIDED ONLY)"
-ScreenGui.TextLabel_35.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_35.TextSize = 14.000
-ScreenGui.TextLabel_35.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_17.Parent = ScreenGui.CustomLevelButton
-ScreenGui.ImageLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_17.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_17.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_17.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_17.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_27.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_27.Parent = ScreenGui.CustomLevelButton
-
-ScreenGui.CustomLevelBox.Name = "CustomLevelBox"
-ScreenGui.CustomLevelBox.Parent = ScreenGui.ScrollingFrame_4
-ScreenGui.CustomLevelBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.CustomLevelBox.Position = UDim2.new(0, 0, 0.164335668, 0)
-ScreenGui.CustomLevelBox.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.CustomLevelBox.Font = Enum.Font.Arial
-ScreenGui.CustomLevelBox.Text = "Your Custom Level Here."
-ScreenGui.CustomLevelBox.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.CustomLevelBox.TextSize = 21.000
-ScreenGui.CustomLevelBox.TextWrapped = true
-
-ScreenGui.UICorner_28.CornerRadius = UDim.new(0.0900000036, 0)
-ScreenGui.UICorner_28.Parent = ScreenGui.CustomLevelBox
-
-ScreenGui.CustomNameButton.Name = "CustomNameButton"
-ScreenGui.CustomNameButton.Parent = ScreenGui.ScrollingFrame_4
-ScreenGui.CustomNameButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.CustomNameButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.CustomNameButton.Font = Enum.Font.Arial
-ScreenGui.CustomNameButton.Text = " "
-ScreenGui.CustomNameButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.CustomNameButton.TextSize = 14.000
-
-ScreenGui.TextLabel_36.Parent = ScreenGui.CustomNameButton
-ScreenGui.TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_36.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_36.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
-ScreenGui.TextLabel_36.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_36.Font = Enum.Font.Arial
-ScreenGui.TextLabel_36.Text = "Custom Name"
-ScreenGui.TextLabel_36.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_36.TextSize = 21.000
-ScreenGui.TextLabel_36.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_37.Parent = ScreenGui.CustomNameButton
-ScreenGui.TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_37.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_37.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_37.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_37.Font = Enum.Font.Arial
-ScreenGui.TextLabel_37.Text = "Gives You A Custom Name. (CLIENT SIDED ONLY)"
-ScreenGui.TextLabel_37.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_37.TextSize = 14.000
-ScreenGui.TextLabel_37.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_18.Parent = ScreenGui.CustomNameButton
-ScreenGui.ImageLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_18.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_18.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_18.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_18.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_29.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_29.Parent = ScreenGui.CustomNameButton
-
-ScreenGui.CustomNameBox.Name = "CustomNameBox"
-ScreenGui.CustomNameBox.Parent = ScreenGui.ScrollingFrame_4
-ScreenGui.CustomNameBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.CustomNameBox.Position = UDim2.new(0, 0, 0.164335668, 0)
-ScreenGui.CustomNameBox.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.CustomNameBox.Font = Enum.Font.Arial
-ScreenGui.CustomNameBox.Text = "Your Custom Name Here."
-ScreenGui.CustomNameBox.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.CustomNameBox.TextSize = 21.000
-ScreenGui.CustomNameBox.TextWrapped = true
-
-ScreenGui.UICorner_30.CornerRadius = UDim.new(0.0900000036, 0)
-ScreenGui.UICorner_30.Parent = ScreenGui.CustomNameBox
-
-ScreenGui.WalkSpeedButton.Name = "WalkSpeedButton"
-ScreenGui.WalkSpeedButton.Parent = ScreenGui.ScrollingFrame_4
-ScreenGui.WalkSpeedButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.WalkSpeedButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.WalkSpeedButton.Font = Enum.Font.Arial
-ScreenGui.WalkSpeedButton.Text = " "
-ScreenGui.WalkSpeedButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.WalkSpeedButton.TextSize = 14.000
-
-ScreenGui.TextLabel_38.Parent = ScreenGui.WalkSpeedButton
-ScreenGui.TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_38.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_38.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
-ScreenGui.TextLabel_38.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_38.Font = Enum.Font.Arial
-ScreenGui.TextLabel_38.Text = "Walk Speed"
-ScreenGui.TextLabel_38.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_38.TextSize = 21.000
-ScreenGui.TextLabel_38.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_39.Parent = ScreenGui.WalkSpeedButton
-ScreenGui.TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_39.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_39.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_39.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_39.Font = Enum.Font.Arial
-ScreenGui.TextLabel_39.Text = "Changes Your WalkSpeed."
-ScreenGui.TextLabel_39.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_39.TextSize = 14.000
-ScreenGui.TextLabel_39.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_19.Parent = ScreenGui.WalkSpeedButton
-ScreenGui.ImageLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_19.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_19.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_19.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_19.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_31.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_31.Parent = ScreenGui.WalkSpeedButton
-
-ScreenGui.WalkSpeedBox.Name = "WalkSpeedBox"
-ScreenGui.WalkSpeedBox.Parent = ScreenGui.ScrollingFrame_4
-ScreenGui.WalkSpeedBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.WalkSpeedBox.Position = UDim2.new(0, 0, 0.164335668, 0)
-ScreenGui.WalkSpeedBox.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.WalkSpeedBox.Font = Enum.Font.Arial
-ScreenGui.WalkSpeedBox.Text = "Walk Speed Here."
-ScreenGui.WalkSpeedBox.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.WalkSpeedBox.TextSize = 21.000
-ScreenGui.WalkSpeedBox.TextWrapped = true
-
-ScreenGui.UICorner_32.CornerRadius = UDim.new(0.0900000036, 0)
-ScreenGui.UICorner_32.Parent = ScreenGui.WalkSpeedBox
-
-ScreenGui.RemoveTicketButton.Name = "RemoveTicketButton"
-ScreenGui.RemoveTicketButton.Parent = ScreenGui.ScrollingFrame_4
-ScreenGui.RemoveTicketButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.RemoveTicketButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.RemoveTicketButton.Font = Enum.Font.Arial
-ScreenGui.RemoveTicketButton.Text = " "
-ScreenGui.RemoveTicketButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.RemoveTicketButton.TextSize = 14.000
-
-ScreenGui.TextLabel_40.Parent = ScreenGui.RemoveTicketButton
-ScreenGui.TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_40.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_40.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
-ScreenGui.TextLabel_40.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_40.Font = Enum.Font.Arial
-ScreenGui.TextLabel_40.Text = "Remove Ticket"
-ScreenGui.TextLabel_40.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_40.TextSize = 21.000
-ScreenGui.TextLabel_40.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_41.Parent = ScreenGui.RemoveTicketButton
-ScreenGui.TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_41.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_41.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_41.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_41.Font = Enum.Font.Arial
-ScreenGui.TextLabel_41.Text = "Removes Your Ticket / Tickets."
-ScreenGui.TextLabel_41.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_41.TextSize = 14.000
-ScreenGui.TextLabel_41.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_20.Parent = ScreenGui.RemoveTicketButton
-ScreenGui.ImageLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_20.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_20.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_20.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_20.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_33.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_33.Parent = ScreenGui.RemoveTicketButton
-
-ScreenGui.InfSkittlesButton.Name = "InfSkittlesButton"
-ScreenGui.InfSkittlesButton.Parent = ScreenGui.ScrollingFrame_4
-ScreenGui.InfSkittlesButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.InfSkittlesButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.InfSkittlesButton.Font = Enum.Font.Arial
-ScreenGui.InfSkittlesButton.Text = " "
-ScreenGui.InfSkittlesButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.InfSkittlesButton.TextSize = 14.000
-
-ScreenGui.TextLabel_42.Parent = ScreenGui.InfSkittlesButton
-ScreenGui.TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_42.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_42.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
-ScreenGui.TextLabel_42.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_42.Font = Enum.Font.Arial
-ScreenGui.TextLabel_42.Text = "Skittles Effect"
-ScreenGui.TextLabel_42.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_42.TextSize = 21.000
-ScreenGui.TextLabel_42.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_43.Parent = ScreenGui.InfSkittlesButton
-ScreenGui.TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_43.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_43.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_43.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_43.Font = Enum.Font.Arial
-ScreenGui.TextLabel_43.Text = "Gives You The Skittles Effect."
-ScreenGui.TextLabel_43.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_43.TextSize = 14.000
-ScreenGui.TextLabel_43.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_21.Parent = ScreenGui.InfSkittlesButton
-ScreenGui.ImageLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_21.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_21.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_21.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_21.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_34.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_34.Parent = ScreenGui.InfSkittlesButton
-
-ScreenGui.InfKarmaButton.Name = "InfKarmaButton"
-ScreenGui.InfKarmaButton.Parent = ScreenGui.ScrollingFrame_4
-ScreenGui.InfKarmaButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.InfKarmaButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.InfKarmaButton.Font = Enum.Font.Arial
-ScreenGui.InfKarmaButton.Text = " "
-ScreenGui.InfKarmaButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.InfKarmaButton.TextSize = 14.000
-
-ScreenGui.TextLabel_44.Parent = ScreenGui.InfKarmaButton
-ScreenGui.TextLabel_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_44.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_44.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
-ScreenGui.TextLabel_44.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_44.Font = Enum.Font.Arial
-ScreenGui.TextLabel_44.Text = "Infinite Karma"
-ScreenGui.TextLabel_44.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_44.TextSize = 21.000
-ScreenGui.TextLabel_44.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_45.Parent = ScreenGui.InfKarmaButton
-ScreenGui.TextLabel_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_45.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_45.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_45.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_45.Font = Enum.Font.Arial
-ScreenGui.TextLabel_45.Text = "Gives You Infinite Karma."
-ScreenGui.TextLabel_45.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_45.TextSize = 14.000
-ScreenGui.TextLabel_45.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_22.Parent = ScreenGui.InfKarmaButton
-ScreenGui.ImageLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_22.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_22.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_22.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_22.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_35.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_35.Parent = ScreenGui.InfKarmaButton
-
-ScreenGui.FlyButton.Name = "FlyButton"
-ScreenGui.FlyButton.Parent = ScreenGui.ScrollingFrame_4
-ScreenGui.FlyButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.FlyButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.FlyButton.Font = Enum.Font.Arial
-ScreenGui.FlyButton.Text = " "
-ScreenGui.FlyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.FlyButton.TextSize = 14.000
-
-ScreenGui.TextLabel_46.Parent = ScreenGui.FlyButton
-ScreenGui.TextLabel_46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_46.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_46.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
-ScreenGui.TextLabel_46.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_46.Font = Enum.Font.Arial
-ScreenGui.TextLabel_46.Text = "Fly"
-ScreenGui.TextLabel_46.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_46.TextSize = 21.000
-ScreenGui.TextLabel_46.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_47.Parent = ScreenGui.FlyButton
-ScreenGui.TextLabel_47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_47.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_47.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_47.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_47.Font = Enum.Font.Arial
-ScreenGui.TextLabel_47.Text = "Makes Your Character Fly."
-ScreenGui.TextLabel_47.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_47.TextSize = 14.000
-ScreenGui.TextLabel_47.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_23.Parent = ScreenGui.FlyButton
-ScreenGui.ImageLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_23.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_23.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_23.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_23.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_36.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_36.Parent = ScreenGui.FlyButton
-
-ScreenGui.TrollPage.Name = "TrollPage"
-ScreenGui.TrollPage.Parent = ScreenGui.Pages
-ScreenGui.TrollPage.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-ScreenGui.TrollPage.Position = UDim2.new(1.34436429, 0, 0.133858263, 0)
-ScreenGui.TrollPage.Size = UDim2.new(0, 480, 0, 304)
-ScreenGui.TrollPage.Visible = false
-
-ScreenGui.UICorner_37.Parent = ScreenGui.TrollPage
-
-ScreenGui.ScrollingFrame_5.Parent = ScreenGui.TrollPage
-ScreenGui.ScrollingFrame_5.Active = true
-ScreenGui.ScrollingFrame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ScrollingFrame_5.BackgroundTransparency = 1.000
-ScreenGui.ScrollingFrame_5.BorderSizePixel = 0
-ScreenGui.ScrollingFrame_5.Position = UDim2.new(0.0130902613, 0, 0.0200159177, 0)
-ScreenGui.ScrollingFrame_5.Size = UDim2.new(0, 473, 0, 286)
-ScreenGui.ScrollingFrame_5.CanvasSize = UDim2.new(0, 0, 1.64999998, 0)
-ScreenGui.ScrollingFrame_5.ScrollBarThickness = 5
-
-ScreenGui.UIListLayout_5.Parent = ScreenGui.ScrollingFrame_5
-ScreenGui.UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
-ScreenGui.UIListLayout_5.Padding = UDim.new(0, 2)
-
-ScreenGui.SizeChangerButton.Name = "SizeChangerButton"
-ScreenGui.SizeChangerButton.Parent = ScreenGui.ScrollingFrame_5
-ScreenGui.SizeChangerButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.SizeChangerButton.Position = UDim2.new(0, 0, 0.657342672, 0)
-ScreenGui.SizeChangerButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.SizeChangerButton.Font = Enum.Font.Arial
-ScreenGui.SizeChangerButton.Text = " "
-ScreenGui.SizeChangerButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.SizeChangerButton.TextSize = 14.000
-
-ScreenGui.TextLabel_48.Parent = ScreenGui.SizeChangerButton
-ScreenGui.TextLabel_48.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_48.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_48.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_48.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_48.Font = Enum.Font.Arial
-ScreenGui.TextLabel_48.Text = "Size Changer"
-ScreenGui.TextLabel_48.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_48.TextSize = 21.000
-ScreenGui.TextLabel_48.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_49.Parent = ScreenGui.SizeChangerButton
-ScreenGui.TextLabel_49.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_49.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_49.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_49.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_49.Font = Enum.Font.Arial
-ScreenGui.TextLabel_49.Text = "Changes Your Characters Height / Width FE."
-ScreenGui.TextLabel_49.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_49.TextSize = 14.000
-ScreenGui.TextLabel_49.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_24.Parent = ScreenGui.SizeChangerButton
-ScreenGui.ImageLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_24.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_24.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_24.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_24.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_38.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_38.Parent = ScreenGui.SizeChangerButton
-
-ScreenGui.DeadButton.Name = "DeadButton"
-ScreenGui.DeadButton.Parent = ScreenGui.ScrollingFrame_5
-ScreenGui.DeadButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.DeadButton.Position = UDim2.new(0, 0, 0.164335668, 0)
-ScreenGui.DeadButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.DeadButton.Font = Enum.Font.Arial
-ScreenGui.DeadButton.Text = " "
-ScreenGui.DeadButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.DeadButton.TextSize = 14.000
-
-ScreenGui.TextLabel_50.Parent = ScreenGui.DeadButton
-ScreenGui.TextLabel_50.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_50.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_50.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_50.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_50.Font = Enum.Font.Arial
-ScreenGui.TextLabel_50.Text = "Suicide"
-ScreenGui.TextLabel_50.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_50.TextSize = 21.000
-ScreenGui.TextLabel_50.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_51.Parent = ScreenGui.DeadButton
-ScreenGui.TextLabel_51.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_51.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_51.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_51.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_51.Font = Enum.Font.Arial
-ScreenGui.TextLabel_51.Text = "Kill Yourself."
-ScreenGui.TextLabel_51.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_51.TextSize = 14.000
-ScreenGui.TextLabel_51.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_25.Parent = ScreenGui.DeadButton
-ScreenGui.ImageLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_25.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_25.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_25.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_25.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_39.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_39.Parent = ScreenGui.DeadButton
-
-ScreenGui.FireButton.Name = "FireButton"
-ScreenGui.FireButton.Parent = ScreenGui.ScrollingFrame_5
-ScreenGui.FireButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.FireButton.Position = UDim2.new(0, 0, 0.328671336, 0)
-ScreenGui.FireButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.FireButton.Font = Enum.Font.Arial
-ScreenGui.FireButton.Text = " "
-ScreenGui.FireButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.FireButton.TextSize = 14.000
-
-ScreenGui.TextLabel_52.Parent = ScreenGui.FireButton
-ScreenGui.TextLabel_52.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_52.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_52.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_52.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_52.Font = Enum.Font.Arial
-ScreenGui.TextLabel_52.Text = "Fire Hands"
-ScreenGui.TextLabel_52.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_52.TextSize = 21.000
-ScreenGui.TextLabel_52.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_53.Parent = ScreenGui.FireButton
-ScreenGui.TextLabel_53.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_53.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_53.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_53.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_53.Font = Enum.Font.Arial
-ScreenGui.TextLabel_53.Text = "Lights Your Hands On Fire."
-ScreenGui.TextLabel_53.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_53.TextSize = 14.000
-ScreenGui.TextLabel_53.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_26.Parent = ScreenGui.FireButton
-ScreenGui.ImageLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_26.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_26.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_26.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_26.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_40.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_40.Parent = ScreenGui.FireButton
-
-ScreenGui.NoFaceButton.Name = "NoFaceButton"
-ScreenGui.NoFaceButton.Parent = ScreenGui.ScrollingFrame_5
-ScreenGui.NoFaceButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.NoFaceButton.Position = UDim2.new(0, 0, 0.493007004, 0)
-ScreenGui.NoFaceButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.NoFaceButton.Font = Enum.Font.Arial
-ScreenGui.NoFaceButton.Text = " "
-ScreenGui.NoFaceButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.NoFaceButton.TextSize = 14.000
-
-ScreenGui.TextLabel_54.Parent = ScreenGui.NoFaceButton
-ScreenGui.TextLabel_54.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_54.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_54.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_54.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_54.Font = Enum.Font.Arial
-ScreenGui.TextLabel_54.Text = "No Face"
-ScreenGui.TextLabel_54.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_54.TextSize = 21.000
-ScreenGui.TextLabel_54.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_55.Parent = ScreenGui.NoFaceButton
-ScreenGui.TextLabel_55.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_55.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_55.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_55.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_55.Font = Enum.Font.Arial
-ScreenGui.TextLabel_55.Text = "Removes Your Face."
-ScreenGui.TextLabel_55.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_55.TextSize = 14.000
-ScreenGui.TextLabel_55.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_27.Parent = ScreenGui.NoFaceButton
-ScreenGui.ImageLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_27.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_27.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_27.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_27.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_41.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_41.Parent = ScreenGui.NoFaceButton
-
-ScreenGui.HeadlessButton.Name = "HeadlessButton"
-ScreenGui.HeadlessButton.Parent = ScreenGui.ScrollingFrame_5
-ScreenGui.HeadlessButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.HeadlessButton.Position = UDim2.new(0, 0, 0.657342672, 0)
-ScreenGui.HeadlessButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.HeadlessButton.Font = Enum.Font.Arial
-ScreenGui.HeadlessButton.Text = " "
-ScreenGui.HeadlessButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.HeadlessButton.TextSize = 14.000
-
-ScreenGui.TextLabel_56.Parent = ScreenGui.HeadlessButton
-ScreenGui.TextLabel_56.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_56.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_56.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_56.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_56.Font = Enum.Font.Arial
-ScreenGui.TextLabel_56.Text = "Remove Head"
-ScreenGui.TextLabel_56.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_56.TextSize = 21.000
-ScreenGui.TextLabel_56.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_57.Parent = ScreenGui.HeadlessButton
-ScreenGui.TextLabel_57.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_57.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_57.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_57.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_57.Font = Enum.Font.Arial
-ScreenGui.TextLabel_57.Text = "Makes You Headless."
-ScreenGui.TextLabel_57.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_57.TextSize = 14.000
-ScreenGui.TextLabel_57.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_28.Parent = ScreenGui.HeadlessButton
-ScreenGui.ImageLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_28.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_28.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_28.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_28.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_42.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_42.Parent = ScreenGui.HeadlessButton
-
-ScreenGui.BoomBoxButton.Name = "BoomBoxButton"
-ScreenGui.BoomBoxButton.Parent = ScreenGui.ScrollingFrame_5
-ScreenGui.BoomBoxButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScreenGui.BoomBoxButton.Position = UDim2.new(0, 0, 0.592307806, 0)
-ScreenGui.BoomBoxButton.Size = UDim2.new(0, 448, 0, 45)
-ScreenGui.BoomBoxButton.Font = Enum.Font.Arial
-ScreenGui.BoomBoxButton.Text = " "
-ScreenGui.BoomBoxButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.BoomBoxButton.TextSize = 14.000
-
-ScreenGui.TextLabel_58.Parent = ScreenGui.BoomBoxButton
-ScreenGui.TextLabel_58.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_58.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_58.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
-ScreenGui.TextLabel_58.Size = UDim2.new(0, 154, 0, 34)
-ScreenGui.TextLabel_58.Font = Enum.Font.Arial
-ScreenGui.TextLabel_58.Text = "BoomBox"
-ScreenGui.TextLabel_58.TextColor3 = Color3.fromRGB(231, 231, 231)
-ScreenGui.TextLabel_58.TextSize = 21.000
-ScreenGui.TextLabel_58.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.TextLabel_59.Parent = ScreenGui.BoomBoxButton
-ScreenGui.TextLabel_59.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.TextLabel_59.BackgroundTransparency = 1.000
-ScreenGui.TextLabel_59.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
-ScreenGui.TextLabel_59.Size = UDim2.new(0, 154, 0, 20)
-ScreenGui.TextLabel_59.Font = Enum.Font.Arial
-ScreenGui.TextLabel_59.Text = "Gives You A BoomBox."
-ScreenGui.TextLabel_59.TextColor3 = Color3.fromRGB(199, 199, 199)
-ScreenGui.TextLabel_59.TextSize = 14.000
-ScreenGui.TextLabel_59.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ImageLabel_29.Parent = ScreenGui.BoomBoxButton
-ScreenGui.ImageLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.ImageLabel_29.BackgroundTransparency = 1.000
-ScreenGui.ImageLabel_29.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
-ScreenGui.ImageLabel_29.Size = UDim2.new(0, 44, 0, 43)
-ScreenGui.ImageLabel_29.Image = "http://www.roblox.com/asset/?id=11909244136"
-
-ScreenGui.UICorner_43.CornerRadius = UDim.new(0, 6)
-ScreenGui.UICorner_43.Parent = ScreenGui.BoomBoxButton
-
-ScreenGui.SideHolder.Name = "SideHolder"
-ScreenGui.SideHolder.Parent = ScreenGui.Frame
-ScreenGui.SideHolder.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-ScreenGui.SideHolder.BackgroundTransparency = 0.300
-ScreenGui.SideHolder.Position = UDim2.new(1.030303, 0, 0.0033307292, 0)
-ScreenGui.SideHolder.Size = UDim2.new(0, 290, 0, 381)
-
-ScreenGui.UICorner_44.Parent = ScreenGui.SideHolder
-
-ScreenGui.PlayerUsername.Name = "PlayerUsername"
-ScreenGui.PlayerUsername.Parent = ScreenGui.SideHolder
-ScreenGui.PlayerUsername.AnchorPoint = Vector2.new(0.5, 0.5)
-ScreenGui.PlayerUsername.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.PlayerUsername.BackgroundTransparency = 1.000
-ScreenGui.PlayerUsername.BorderSizePixel = 0
-ScreenGui.PlayerUsername.Position = UDim2.new(0.196033105, 0, 0.951009333, 0)
-ScreenGui.PlayerUsername.Size = UDim2.new(0, 101, 0, 35)
-ScreenGui.PlayerUsername.Font = Enum.Font.GothamBold
-ScreenGui.PlayerUsername.Text = "Welcome :"
-ScreenGui.PlayerUsername.TextColor3 = Color3.fromRGB(200, 200, 200)
-ScreenGui.PlayerUsername.TextSize = 19.000
-ScreenGui.PlayerUsername.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.PlayerAvatar.Name = "PlayerAvatar"
-ScreenGui.PlayerAvatar.Parent = ScreenGui.SideHolder
-ScreenGui.PlayerAvatar.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-ScreenGui.PlayerAvatar.BackgroundTransparency = 1.000
-ScreenGui.PlayerAvatar.Position = UDim2.new(0.772896051, 0, 0.88652122, 0)
-ScreenGui.PlayerAvatar.Size = UDim2.new(0, 50, 0, 42)
-ScreenGui.PlayerAvatar.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
-ScreenGui.UICorner_45.Parent = ScreenGui.PlayerAvatar
-
-ScreenGui.discord.Name = "discord"
-ScreenGui.discord.Parent = ScreenGui.SideHolder
-ScreenGui.discord.AnchorPoint = Vector2.new(0.5, 0.5)
-ScreenGui.discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScreenGui.discord.BackgroundTransparency = 1.000
-ScreenGui.discord.BorderSizePixel = 0
-ScreenGui.discord.Position = UDim2.new(0.220171034, 0, 0.0656759888, 0)
-ScreenGui.discord.Size = UDim2.new(0, 101, 0, 35)
-ScreenGui.discord.Font = Enum.Font.GothamBold
-ScreenGui.discord.Text = "discord.gg/UBMbcGt5Jp"
-ScreenGui.discord.TextColor3 = Color3.fromRGB(200, 200, 200)
-ScreenGui.discord.TextSize = 19.000
-ScreenGui.discord.TextXAlignment = Enum.TextXAlignment.Left
-
-ScreenGui.ShadowRightSide.Name = "ShadowRightSide"
-ScreenGui.ShadowRightSide.Parent = ScreenGui.Frame
-ScreenGui.ShadowRightSide.AnchorPoint = Vector2.new(0.5, 0.5)
-ScreenGui.ShadowRightSide.BackgroundTransparency = 1.000
-ScreenGui.ShadowRightSide.BorderSizePixel = 0
-ScreenGui.ShadowRightSide.Position = UDim2.new(1.29144382, 0, 0.511088073, 0)
-ScreenGui.ShadowRightSide.Size = UDim2.new(0.540107012, 47, 1.05263174, 47)
-ScreenGui.ShadowRightSide.ZIndex = 0
-ScreenGui.ShadowRightSide.Image = "rbxassetid://6014261993"
-ScreenGui.ShadowRightSide.ImageColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.ShadowRightSide.ImageTransparency = 0.500
-ScreenGui.ShadowRightSide.ScaleType = Enum.ScaleType.Slice
-ScreenGui.ShadowRightSide.SliceCenter = Rect.new(49, 49, 450, 450)
-
-ScreenGui.ShadowLeftSide.Name = "ShadowLeftSide"
-ScreenGui.ShadowLeftSide.Parent = ScreenGui.Frame
-ScreenGui.ShadowLeftSide.AnchorPoint = Vector2.new(0.5, 0.5)
-ScreenGui.ShadowLeftSide.BackgroundTransparency = 1.000
-ScreenGui.ShadowLeftSide.BorderSizePixel = 0
-ScreenGui.ShadowLeftSide.Position = UDim2.new(-0.188057095, 0, 0.511088073, 0)
-ScreenGui.ShadowLeftSide.Size = UDim2.new(0.32976833, 47, 1.05263174, 47)
-ScreenGui.ShadowLeftSide.ZIndex = 0
-ScreenGui.ShadowLeftSide.Image = "rbxassetid://6014261993"
-ScreenGui.ShadowLeftSide.ImageColor3 = Color3.fromRGB(0, 0, 0)
-ScreenGui.ShadowLeftSide.ImageTransparency = 0.500
-ScreenGui.ShadowLeftSide.ScaleType = Enum.ScaleType.Slice
-ScreenGui.ShadowLeftSide.SliceCenter = Rect.new(49, 49, 450, 450)
+Rawr.Rawr.Name = "Rawr"
+Rawr.Rawr.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Rawr.Rawr.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Rawr.Frame.Parent = Rawr.Rawr
+Rawr.Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Rawr.Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+Rawr.Frame.Size = UDim2.new(0, 561, 0, 375)
+
+Rawr.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(36, 36, 36)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(36, 36, 36))}
+Rawr.UIGradient.Parent = Rawr.Frame
+
+Rawr.UICorner.Parent = Rawr.Frame
+
+Rawr.Header.Name = "Header"
+Rawr.Header.Parent = Rawr.Frame
+Rawr.Header.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Rawr.Header.Size = UDim2.new(0, 561, 0, 38)
+
+Rawr.UICorner_2.Parent = Rawr.Header
+
+Rawr.Line.Name = "Line"
+Rawr.Line.Parent = Rawr.Header
+Rawr.Line.AnchorPoint = Vector2.new(0.5, 0.5)
+Rawr.Line.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Rawr.Line.BorderSizePixel = 0
+Rawr.Line.Position = UDim2.new(0.499777198, 0, 1.02374184, 0)
+Rawr.Line.Size = UDim2.new(0, 560, 0, 1)
+Rawr.Line.ZIndex = 2
+
+Rawr.Title.Name = "Title"
+Rawr.Title.Parent = Rawr.Header
+Rawr.Title.AnchorPoint = Vector2.new(0.5, 0.5)
+Rawr.Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.Title.BackgroundTransparency = 1.000
+Rawr.Title.BorderSizePixel = 0
+Rawr.Title.Position = UDim2.new(0.500427723, 0, 0.493395299, 0)
+Rawr.Title.Size = UDim2.new(0, 101, 0, 35)
+Rawr.Title.Font = Enum.Font.GothamBold
+Rawr.Title.Text = "Iguana Hub"
+Rawr.Title.TextColor3 = Color3.fromRGB(200, 200, 200)
+Rawr.Title.TextSize = 19.000
+Rawr.Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.Pages.Name = "Pages"
+Rawr.Pages.Parent = Rawr.Frame
+Rawr.Pages.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Rawr.Pages.BackgroundTransparency = 0.300
+Rawr.Pages.Position = UDim2.new(-0.342602521, 0, 0.0033307292, 0)
+Rawr.Pages.Size = UDim2.new(0, 173, 0, 381)
+
+Rawr.UICorner_3.Parent = Rawr.Pages
+
+Rawr.MainPage.Name = "MainPage"
+Rawr.MainPage.Parent = Rawr.Pages
+Rawr.MainPage.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Rawr.MainPage.Position = UDim2.new(1.34436429, 0, 0.133858263, 0)
+Rawr.MainPage.Size = UDim2.new(0, 480, 0, 304)
+
+Rawr.UICorner_4.Parent = Rawr.MainPage
+
+Rawr.ScrollingFrame.Parent = Rawr.MainPage
+Rawr.ScrollingFrame.Active = true
+Rawr.ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ScrollingFrame.BackgroundTransparency = 1.000
+Rawr.ScrollingFrame.BorderSizePixel = 0
+Rawr.ScrollingFrame.Position = UDim2.new(0.0130902613, 0, 0.0200159177, 0)
+Rawr.ScrollingFrame.Size = UDim2.new(0, 473, 0, 286)
+Rawr.ScrollingFrame.CanvasSize = UDim2.new(0, 0, 1.64999998, 0)
+Rawr.ScrollingFrame.ScrollBarThickness = 5
+
+Rawr.UIListLayout.Parent = Rawr.ScrollingFrame
+Rawr.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+Rawr.UIListLayout.Padding = UDim.new(0, 2)
+
+Rawr.AutoPickup.Name = "AutoPickup"
+Rawr.AutoPickup.Parent = Rawr.ScrollingFrame
+Rawr.AutoPickup.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.AutoPickup.Size = UDim2.new(0, 448, 0, 45)
+Rawr.AutoPickup.Font = Enum.Font.SourceSansBold
+Rawr.AutoPickup.Text = ""
+Rawr.AutoPickup.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.AutoPickup.TextSize = 18.000
+
+Rawr.UICorner_5.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_5.Parent = Rawr.AutoPickup
+
+Rawr.TextLabel.Parent = Rawr.AutoPickup
+Rawr.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel.BackgroundTransparency = 1.000
+Rawr.TextLabel.Position = UDim2.new(-0.0431472063, 0, -0.088888891, 0)
+Rawr.TextLabel.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel.Font = Enum.Font.Arial
+Rawr.TextLabel.Text = "Auto Pickup"
+Rawr.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel.TextSize = 21.000
+
+Rawr.TextLabel_2.Parent = Rawr.AutoPickup
+Rawr.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_2.BackgroundTransparency = 1.000
+Rawr.TextLabel_2.Position = UDim2.new(0.246192887, 0, 0.400000006, 0)
+Rawr.TextLabel_2.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_2.Font = Enum.Font.Arial
+Rawr.TextLabel_2.Text = "All Tools On The Ground Will Be Picked Up When Toggled."
+Rawr.TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_2.TextSize = 14.000
+
+Rawr.ImageLabel.Parent = Rawr.AutoPickup
+Rawr.ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel.BackgroundTransparency = 1.000
+Rawr.ImageLabel.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.CameraShake.Name = "CameraShake"
+Rawr.CameraShake.Parent = Rawr.ScrollingFrame
+Rawr.CameraShake.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.CameraShake.Position = UDim2.new(0, 0, 0.164335668, 0)
+Rawr.CameraShake.Size = UDim2.new(0, 448, 0, 45)
+Rawr.CameraShake.Font = Enum.Font.Arial
+Rawr.CameraShake.Text = " "
+Rawr.CameraShake.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.CameraShake.TextSize = 14.000
+
+Rawr.TextLabel_3.Parent = Rawr.CameraShake
+Rawr.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_3.BackgroundTransparency = 1.000
+Rawr.TextLabel_3.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_3.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_3.Font = Enum.Font.Arial
+Rawr.TextLabel_3.Text = "Remove Camera Bob"
+Rawr.TextLabel_3.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_3.TextSize = 21.000
+Rawr.TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_4.Parent = Rawr.CameraShake
+Rawr.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_4.BackgroundTransparency = 1.000
+Rawr.TextLabel_4.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_4.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_4.Font = Enum.Font.Arial
+Rawr.TextLabel_4.Text = "Removes The Camera Shake When You Walk / Run"
+Rawr.TextLabel_4.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_4.TextSize = 14.000
+Rawr.TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_2.Parent = Rawr.CameraShake
+Rawr.ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_2.BackgroundTransparency = 1.000
+Rawr.ImageLabel_2.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_2.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_2.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_6.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_6.Parent = Rawr.CameraShake
+
+Rawr.Dupe.Name = "Dupe"
+Rawr.Dupe.Parent = Rawr.ScrollingFrame
+Rawr.Dupe.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.Dupe.Position = UDim2.new(0, 0, 0.328671336, 0)
+Rawr.Dupe.Size = UDim2.new(0, 448, 0, 45)
+Rawr.Dupe.Font = Enum.Font.Arial
+Rawr.Dupe.Text = " "
+Rawr.Dupe.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.Dupe.TextSize = 14.000
+
+Rawr.TextLabel_5.Parent = Rawr.Dupe
+Rawr.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_5.BackgroundTransparency = 1.000
+Rawr.TextLabel_5.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_5.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_5.Font = Enum.Font.Arial
+Rawr.TextLabel_5.Text = "Dupe"
+Rawr.TextLabel_5.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_5.TextSize = 21.000
+Rawr.TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_6.Parent = Rawr.Dupe
+Rawr.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_6.BackgroundTransparency = 1.000
+Rawr.TextLabel_6.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_6.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_6.Font = Enum.Font.Arial
+Rawr.TextLabel_6.Text = "Dupes Your Tools / Cash."
+Rawr.TextLabel_6.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_6.TextSize = 14.000
+Rawr.TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_3.Parent = Rawr.Dupe
+Rawr.ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_3.BackgroundTransparency = 1.000
+Rawr.ImageLabel_3.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_3.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_3.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_7.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_7.Parent = Rawr.Dupe
+
+Rawr.CombatLog.Name = "CombatLog"
+Rawr.CombatLog.Parent = Rawr.ScrollingFrame
+Rawr.CombatLog.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.CombatLog.Position = UDim2.new(0, 0, 0.493007004, 0)
+Rawr.CombatLog.Size = UDim2.new(0, 448, 0, 45)
+Rawr.CombatLog.Font = Enum.Font.Arial
+Rawr.CombatLog.Text = " "
+Rawr.CombatLog.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.CombatLog.TextSize = 14.000
+
+Rawr.TextLabel_7.Parent = Rawr.CombatLog
+Rawr.TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_7.BackgroundTransparency = 1.000
+Rawr.TextLabel_7.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_7.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_7.Font = Enum.Font.Arial
+Rawr.TextLabel_7.Text = "Remove Combat Log"
+Rawr.TextLabel_7.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_7.TextSize = 21.000
+Rawr.TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_8.Parent = Rawr.CombatLog
+Rawr.TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_8.BackgroundTransparency = 1.000
+Rawr.TextLabel_8.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_8.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_8.Font = Enum.Font.Arial
+Rawr.TextLabel_8.Text = "Removes Your Combat Log."
+Rawr.TextLabel_8.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_8.TextSize = 14.000
+Rawr.TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_4.Parent = Rawr.CombatLog
+Rawr.ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_4.BackgroundTransparency = 1.000
+Rawr.ImageLabel_4.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_4.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_4.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_8.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_8.Parent = Rawr.CombatLog
+
+Rawr.RemoveDamageBlood.Name = "RemoveDamageBlood"
+Rawr.RemoveDamageBlood.Parent = Rawr.ScrollingFrame
+Rawr.RemoveDamageBlood.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.RemoveDamageBlood.Position = UDim2.new(0, 0, 0.657342672, 0)
+Rawr.RemoveDamageBlood.Size = UDim2.new(0, 448, 0, 45)
+Rawr.RemoveDamageBlood.Font = Enum.Font.Arial
+Rawr.RemoveDamageBlood.Text = " "
+Rawr.RemoveDamageBlood.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.RemoveDamageBlood.TextSize = 14.000
+
+Rawr.TextLabel_9.Parent = Rawr.RemoveDamageBlood
+Rawr.TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_9.BackgroundTransparency = 1.000
+Rawr.TextLabel_9.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_9.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_9.Font = Enum.Font.Arial
+Rawr.TextLabel_9.Text = "Remove Blood"
+Rawr.TextLabel_9.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_9.TextSize = 21.000
+Rawr.TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_10.Parent = Rawr.RemoveDamageBlood
+Rawr.TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_10.BackgroundTransparency = 1.000
+Rawr.TextLabel_10.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_10.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_10.Font = Enum.Font.Arial
+Rawr.TextLabel_10.Text = "Removes The Blood When You Get Damaged."
+Rawr.TextLabel_10.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_10.TextSize = 14.000
+Rawr.TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_5.Parent = Rawr.RemoveDamageBlood
+Rawr.ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_5.BackgroundTransparency = 1.000
+Rawr.ImageLabel_5.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_5.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_5.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_9.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_9.Parent = Rawr.RemoveDamageBlood
+
+Rawr.AntiAFK.Name = "Anti AFK"
+Rawr.AntiAFK.Parent = Rawr.ScrollingFrame
+Rawr.AntiAFK.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.AntiAFK.Position = UDim2.new(0, 0, 0.82167834, 0)
+Rawr.AntiAFK.Size = UDim2.new(0, 448, 0, 45)
+Rawr.AntiAFK.Font = Enum.Font.Arial
+Rawr.AntiAFK.Text = " "
+Rawr.AntiAFK.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.AntiAFK.TextSize = 14.000
+
+Rawr.TextLabel_11.Parent = Rawr.AntiAFK
+Rawr.TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_11.BackgroundTransparency = 1.000
+Rawr.TextLabel_11.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_11.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_11.Font = Enum.Font.Arial
+Rawr.TextLabel_11.Text = "Anti AFK"
+Rawr.TextLabel_11.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_11.TextSize = 21.000
+Rawr.TextLabel_11.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_12.Parent = Rawr.AntiAFK
+Rawr.TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_12.BackgroundTransparency = 1.000
+Rawr.TextLabel_12.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_12.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_12.Font = Enum.Font.Arial
+Rawr.TextLabel_12.Text = "You Won't Be Kicked When AFK"
+Rawr.TextLabel_12.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_12.TextSize = 14.000
+Rawr.TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_6.Parent = Rawr.AntiAFK
+Rawr.ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_6.BackgroundTransparency = 1.000
+Rawr.ImageLabel_6.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_6.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_6.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_10.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_10.Parent = Rawr.AntiAFK
+
+Rawr.ChatSpy.Name = "ChatSpy"
+Rawr.ChatSpy.Parent = Rawr.ScrollingFrame
+Rawr.ChatSpy.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.ChatSpy.Position = UDim2.new(0, 0, 0.986014009, 0)
+Rawr.ChatSpy.Size = UDim2.new(0, 448, 0, 45)
+Rawr.ChatSpy.Font = Enum.Font.Arial
+Rawr.ChatSpy.Text = " "
+Rawr.ChatSpy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.ChatSpy.TextSize = 14.000
+
+Rawr.TextLabel_13.Parent = Rawr.ChatSpy
+Rawr.TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_13.BackgroundTransparency = 1.000
+Rawr.TextLabel_13.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_13.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_13.Font = Enum.Font.Arial
+Rawr.TextLabel_13.Text = "Chat Spy"
+Rawr.TextLabel_13.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_13.TextSize = 21.000
+Rawr.TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_14.Parent = Rawr.ChatSpy
+Rawr.TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_14.BackgroundTransparency = 1.000
+Rawr.TextLabel_14.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_14.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_14.Font = Enum.Font.Arial
+Rawr.TextLabel_14.Text = "Spy On Other Players Chats."
+Rawr.TextLabel_14.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_14.TextSize = 14.000
+Rawr.TextLabel_14.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_7.Parent = Rawr.ChatSpy
+Rawr.ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_7.BackgroundTransparency = 1.000
+Rawr.ImageLabel_7.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_7.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_7.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_11.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_11.Parent = Rawr.ChatSpy
+
+Rawr.LOWGFX.Name = "LOWGFX"
+Rawr.LOWGFX.Parent = Rawr.ScrollingFrame
+Rawr.LOWGFX.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.LOWGFX.Position = UDim2.new(0, 0, 1.15034962, 0)
+Rawr.LOWGFX.Size = UDim2.new(0, 448, 0, 45)
+Rawr.LOWGFX.Font = Enum.Font.Arial
+Rawr.LOWGFX.Text = " "
+Rawr.LOWGFX.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.LOWGFX.TextSize = 14.000
+
+Rawr.TextLabel_15.Parent = Rawr.LOWGFX
+Rawr.TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_15.BackgroundTransparency = 1.000
+Rawr.TextLabel_15.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_15.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_15.Font = Enum.Font.Arial
+Rawr.TextLabel_15.Text = "Low GFX"
+Rawr.TextLabel_15.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_15.TextSize = 21.000
+Rawr.TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_16.Parent = Rawr.LOWGFX
+Rawr.TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_16.BackgroundTransparency = 1.000
+Rawr.TextLabel_16.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_16.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_16.Font = Enum.Font.Arial
+Rawr.TextLabel_16.Text = "Improves Your FPS."
+Rawr.TextLabel_16.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_16.TextSize = 14.000
+Rawr.TextLabel_16.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_8.Parent = Rawr.LOWGFX
+Rawr.ImageLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_8.BackgroundTransparency = 1.000
+Rawr.ImageLabel_8.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_8.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_8.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_12.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_12.Parent = Rawr.LOWGFX
+
+Rawr.SkipScrren.Name = "SkipScrren"
+Rawr.SkipScrren.Parent = Rawr.ScrollingFrame
+Rawr.SkipScrren.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.SkipScrren.Position = UDim2.new(0, 0, 1.31468534, 0)
+Rawr.SkipScrren.Size = UDim2.new(0, 448, 0, 45)
+Rawr.SkipScrren.Font = Enum.Font.Arial
+Rawr.SkipScrren.Text = " "
+Rawr.SkipScrren.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.SkipScrren.TextSize = 14.000
+
+Rawr.TextLabel_17.Parent = Rawr.SkipScrren
+Rawr.TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_17.BackgroundTransparency = 1.000
+Rawr.TextLabel_17.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_17.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_17.Font = Enum.Font.Arial
+Rawr.TextLabel_17.Text = "Skip Loading Screen"
+Rawr.TextLabel_17.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_17.TextSize = 21.000
+Rawr.TextLabel_17.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_18.Parent = Rawr.SkipScrren
+Rawr.TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_18.BackgroundTransparency = 1.000
+Rawr.TextLabel_18.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_18.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_18.Font = Enum.Font.Arial
+Rawr.TextLabel_18.Text = "Skips The Menu / Loading Screen."
+Rawr.TextLabel_18.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_18.TextSize = 14.000
+Rawr.TextLabel_18.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_9.Parent = Rawr.SkipScrren
+Rawr.ImageLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_9.BackgroundTransparency = 1.000
+Rawr.ImageLabel_9.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_9.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_9.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_13.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_13.Parent = Rawr.SkipScrren
+
+Rawr.AdminGunCheck.Name = "AdminGunCheck"
+Rawr.AdminGunCheck.Parent = Rawr.ScrollingFrame
+Rawr.AdminGunCheck.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.AdminGunCheck.Position = UDim2.new(0, 0, 1.47902095, 0)
+Rawr.AdminGunCheck.Size = UDim2.new(0, 448, 0, 45)
+Rawr.AdminGunCheck.Font = Enum.Font.Arial
+Rawr.AdminGunCheck.Text = " "
+Rawr.AdminGunCheck.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.AdminGunCheck.TextSize = 14.000
+
+Rawr.TextLabel_19.Parent = Rawr.AdminGunCheck
+Rawr.TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_19.BackgroundTransparency = 1.000
+Rawr.TextLabel_19.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_19.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_19.Font = Enum.Font.Arial
+Rawr.TextLabel_19.Text = "Safe Checker"
+Rawr.TextLabel_19.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_19.TextSize = 21.000
+Rawr.TextLabel_19.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_20.Parent = Rawr.AdminGunCheck
+Rawr.TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_20.BackgroundTransparency = 1.000
+Rawr.TextLabel_20.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_20.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_20.Font = Enum.Font.Arial
+Rawr.TextLabel_20.Text = "Checks For Admin Guns."
+Rawr.TextLabel_20.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_20.TextSize = 14.000
+Rawr.TextLabel_20.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_10.Parent = Rawr.AdminGunCheck
+Rawr.ImageLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_10.BackgroundTransparency = 1.000
+Rawr.ImageLabel_10.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_10.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_10.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_14.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_14.Parent = Rawr.AdminGunCheck
+
+Rawr.ButtonsFolder.Name = "ButtonsFolder"
+Rawr.ButtonsFolder.Parent = Rawr.Pages
+
+Rawr.TrollButton.Name = "TrollButton"
+Rawr.TrollButton.Parent = Rawr.ButtonsFolder
+Rawr.TrollButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TrollButton.BackgroundTransparency = 1.000
+Rawr.TrollButton.Position = UDim2.new(0.0560892783, 0, 0.419947505, 0)
+Rawr.TrollButton.Size = UDim2.new(0, 63, 0, 22)
+Rawr.TrollButton.Font = Enum.Font.SourceSansBold
+Rawr.TrollButton.Text = "Troll"
+Rawr.TrollButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TrollButton.TextSize = 21.000
+
+Rawr.ModsButton.Name = "ModsButton"
+Rawr.ModsButton.Parent = Rawr.ButtonsFolder
+Rawr.ModsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ModsButton.BackgroundTransparency = 1.000
+Rawr.ModsButton.Position = UDim2.new(0.148574919, 0, 0.338582665, 0)
+Rawr.ModsButton.Size = UDim2.new(0, 138, 0, 22)
+Rawr.ModsButton.Font = Enum.Font.SourceSansBold
+Rawr.ModsButton.Text = "Gun Modifications"
+Rawr.ModsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ModsButton.TextSize = 21.000
+
+Rawr.PlayerButton.Name = "PlayerButton"
+Rawr.PlayerButton.Parent = Rawr.ButtonsFolder
+Rawr.PlayerButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.PlayerButton.BackgroundTransparency = 1.000
+Rawr.PlayerButton.Position = UDim2.new(0.148574919, 0, 0.181102365, 0)
+Rawr.PlayerButton.Size = UDim2.new(0, 50, 0, 25)
+Rawr.PlayerButton.Font = Enum.Font.SourceSansBold
+Rawr.PlayerButton.Text = "Player"
+Rawr.PlayerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.PlayerButton.TextSize = 21.000
+
+Rawr.MiscButton.Name = "MiscButton"
+Rawr.MiscButton.Parent = Rawr.ButtonsFolder
+Rawr.MiscButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.MiscButton.BackgroundTransparency = 1.000
+Rawr.MiscButton.Position = UDim2.new(0.0849709958, 0, 0.262467206, 0)
+Rawr.MiscButton.Size = UDim2.new(0, 54, 0, 23)
+Rawr.MiscButton.Font = Enum.Font.SourceSansBold
+Rawr.MiscButton.Text = "Misc"
+Rawr.MiscButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.MiscButton.TextSize = 21.000
+
+Rawr.CreditsButton.Name = "CreditsButton"
+Rawr.CreditsButton.Parent = Rawr.ButtonsFolder
+Rawr.CreditsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.CreditsButton.BackgroundTransparency = 1.000
+Rawr.CreditsButton.Position = UDim2.new(0.108112402, 0, 0.501312315, 0)
+Rawr.CreditsButton.Size = UDim2.new(0, 63, 0, 20)
+Rawr.CreditsButton.Font = Enum.Font.SourceSansBold
+Rawr.CreditsButton.Text = "Credits"
+Rawr.CreditsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.CreditsButton.TextSize = 21.000
+
+Rawr.MainButton.Name = "MainButton"
+Rawr.MainButton.Parent = Rawr.ButtonsFolder
+Rawr.MainButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.MainButton.BackgroundTransparency = 1.000
+Rawr.MainButton.Position = UDim2.new(0.0792106688, 0, 0.0944881886, 0)
+Rawr.MainButton.Size = UDim2.new(0, 63, 0, 33)
+Rawr.MainButton.Font = Enum.Font.SourceSansBold
+Rawr.MainButton.Text = "Main"
+Rawr.MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.MainButton.TextSize = 21.000
+
+Rawr.CreditsPage.Name = "CreditsPage"
+Rawr.CreditsPage.Parent = Rawr.Pages
+Rawr.CreditsPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.CreditsPage.BackgroundTransparency = 1.000
+Rawr.CreditsPage.Position = UDim2.new(1.11315036, 0, 0.144356951, 0)
+Rawr.CreditsPage.Size = UDim2.new(0, 560, 0, 316)
+Rawr.CreditsPage.Visible = false
+
+Rawr.UICorner_15.Parent = Rawr.CreditsPage
+
+Rawr.TextLabel_21.Parent = Rawr.CreditsPage
+Rawr.TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_21.BackgroundTransparency = 1.000
+Rawr.TextLabel_21.Position = UDim2.new(0.321428567, 0, 0.382911384, 0)
+Rawr.TextLabel_21.Size = UDim2.new(0, 200, 0, 50)
+Rawr.TextLabel_21.Font = Enum.Font.Gotham
+Rawr.TextLabel_21.Text = "Iguana Hub Created By Gelato#0002"
+Rawr.TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_21.TextSize = 28.000
+
+Rawr.Marker.Name = "Marker"
+Rawr.Marker.Parent = Rawr.Pages
+
+Rawr.Slider.Name = "Slider"
+Rawr.Slider.Parent = Rawr.Marker
+Rawr.Slider.BackgroundColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.Slider.BorderSizePixel = 0
+Rawr.Slider.Position = UDim2.new(0, 0, 0.105999999, 0)
+Rawr.Slider.Size = UDim2.new(0, 2, 0, 20)
+
+Rawr.MiscPage.Name = "MiscPage"
+Rawr.MiscPage.Parent = Rawr.Pages
+Rawr.MiscPage.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Rawr.MiscPage.Position = UDim2.new(1.34436429, 0, 0.133858263, 0)
+Rawr.MiscPage.Size = UDim2.new(0, 480, 0, 304)
+Rawr.MiscPage.Visible = false
+
+Rawr.UICorner_16.Parent = Rawr.MiscPage
+
+Rawr.ScrollingFrame_2.Parent = Rawr.MiscPage
+Rawr.ScrollingFrame_2.Active = true
+Rawr.ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ScrollingFrame_2.BackgroundTransparency = 1.000
+Rawr.ScrollingFrame_2.BorderSizePixel = 0
+Rawr.ScrollingFrame_2.Position = UDim2.new(0.0130902613, 0, 0.0200159177, 0)
+Rawr.ScrollingFrame_2.Size = UDim2.new(0, 473, 0, 286)
+Rawr.ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 1.64999998, 0)
+Rawr.ScrollingFrame_2.ScrollBarThickness = 5
+
+Rawr.UIListLayout_2.Parent = Rawr.ScrollingFrame_2
+Rawr.UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+Rawr.UIListLayout_2.Padding = UDim.new(0, 2)
+
+Rawr.ESPButton.Name = "ESPButton"
+Rawr.ESPButton.Parent = Rawr.ScrollingFrame_2
+Rawr.ESPButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.ESPButton.Position = UDim2.new(0.037558686, 0, 0.0564524755, 0)
+Rawr.ESPButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.ESPButton.Font = Enum.Font.Arial
+Rawr.ESPButton.Text = " "
+Rawr.ESPButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.ESPButton.TextSize = 14.000
+
+Rawr.TextLabel_22.Parent = Rawr.ESPButton
+Rawr.TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_22.BackgroundTransparency = 1.000
+Rawr.TextLabel_22.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_22.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_22.Font = Enum.Font.Arial
+Rawr.TextLabel_22.Text = "ESP"
+Rawr.TextLabel_22.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_22.TextSize = 21.000
+Rawr.TextLabel_22.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_23.Parent = Rawr.ESPButton
+Rawr.TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_23.BackgroundTransparency = 1.000
+Rawr.TextLabel_23.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_23.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_23.Font = Enum.Font.Arial
+Rawr.TextLabel_23.Text = "Tracks Other Players."
+Rawr.TextLabel_23.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_23.TextSize = 14.000
+Rawr.TextLabel_23.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_11.Parent = Rawr.ESPButton
+Rawr.ImageLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_11.BackgroundTransparency = 1.000
+Rawr.ImageLabel_11.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_11.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_11.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_17.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_17.Parent = Rawr.ESPButton
+
+Rawr.HitboxButton.Name = "HitboxButton"
+Rawr.HitboxButton.Parent = Rawr.ScrollingFrame_2
+Rawr.HitboxButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.HitboxButton.Position = UDim2.new(0.037558686, 0, 0.0564524755, 0)
+Rawr.HitboxButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.HitboxButton.Font = Enum.Font.Arial
+Rawr.HitboxButton.Text = " "
+Rawr.HitboxButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.HitboxButton.TextSize = 14.000
+
+Rawr.TextLabel_24.Parent = Rawr.HitboxButton
+Rawr.TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_24.BackgroundTransparency = 1.000
+Rawr.TextLabel_24.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_24.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_24.Font = Enum.Font.Arial
+Rawr.TextLabel_24.Text = "Hitbox Expander"
+Rawr.TextLabel_24.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_24.TextSize = 21.000
+Rawr.TextLabel_24.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_25.Parent = Rawr.HitboxButton
+Rawr.TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_25.BackgroundTransparency = 1.000
+Rawr.TextLabel_25.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_25.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_25.Font = Enum.Font.Arial
+Rawr.TextLabel_25.Text = "Makes Other Players HitBoxes Bigger."
+Rawr.TextLabel_25.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_25.TextSize = 14.000
+Rawr.TextLabel_25.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_12.Parent = Rawr.HitboxButton
+Rawr.ImageLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_12.BackgroundTransparency = 1.000
+Rawr.ImageLabel_12.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_12.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_12.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_18.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_18.Parent = Rawr.HitboxButton
+
+Rawr.PlayerKillerButton.Name = "PlayerKillerButton"
+Rawr.PlayerKillerButton.Parent = Rawr.ScrollingFrame_2
+Rawr.PlayerKillerButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.PlayerKillerButton.Position = UDim2.new(0, 0, 0.328671336, 0)
+Rawr.PlayerKillerButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.PlayerKillerButton.Font = Enum.Font.SourceSansBold
+Rawr.PlayerKillerButton.Text = ""
+Rawr.PlayerKillerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.PlayerKillerButton.TextSize = 18.000
+
+Rawr.UICorner_19.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_19.Parent = Rawr.PlayerKillerButton
+
+Rawr.TextLabel_26.Parent = Rawr.PlayerKillerButton
+Rawr.TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_26.BackgroundTransparency = 1.000
+Rawr.TextLabel_26.Position = UDim2.new(0.0355329961, 0, 0, 0)
+Rawr.TextLabel_26.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_26.Font = Enum.Font.Arial
+Rawr.TextLabel_26.Text = "Kill Player With Fist"
+Rawr.TextLabel_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_26.TextSize = 21.000
+
+Rawr.TextLabel_27.Parent = Rawr.PlayerKillerButton
+Rawr.TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_27.BackgroundTransparency = 1.000
+Rawr.TextLabel_27.Position = UDim2.new(0.0507614166, 0, 0.377777785, 0)
+Rawr.TextLabel_27.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_27.Font = Enum.Font.Arial
+Rawr.TextLabel_27.Text = "Kills The Player You Choose."
+Rawr.TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_27.TextSize = 14.000
+
+Rawr.ImageLabel_13.Parent = Rawr.PlayerKillerButton
+Rawr.ImageLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_13.BackgroundTransparency = 1.000
+Rawr.ImageLabel_13.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_13.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_13.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.PlayerKillerBox.Name = "PlayerKillerBox"
+Rawr.PlayerKillerBox.Parent = Rawr.ScrollingFrame_2
+Rawr.PlayerKillerBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.PlayerKillerBox.Position = UDim2.new(0, 0, 0.493007004, 0)
+Rawr.PlayerKillerBox.Size = UDim2.new(0, 448, 0, 45)
+Rawr.PlayerKillerBox.Font = Enum.Font.Arial
+Rawr.PlayerKillerBox.Text = "Player Name Here."
+Rawr.PlayerKillerBox.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.PlayerKillerBox.TextSize = 21.000
+Rawr.PlayerKillerBox.TextWrapped = true
+
+Rawr.UICorner_20.CornerRadius = UDim.new(0.0900000036, 0)
+Rawr.UICorner_20.Parent = Rawr.PlayerKillerBox
+
+Rawr.SoundRemoverButton.Name = "SoundRemoverButton"
+Rawr.SoundRemoverButton.Parent = Rawr.ScrollingFrame_2
+Rawr.SoundRemoverButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.SoundRemoverButton.Position = UDim2.new(0, 0, 0.82167834, 0)
+Rawr.SoundRemoverButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.SoundRemoverButton.Font = Enum.Font.Arial
+Rawr.SoundRemoverButton.Text = " "
+Rawr.SoundRemoverButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.SoundRemoverButton.TextSize = 14.000
+
+Rawr.TextLabel_28.Parent = Rawr.SoundRemoverButton
+Rawr.TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_28.BackgroundTransparency = 1.000
+Rawr.TextLabel_28.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_28.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_28.Font = Enum.Font.Arial
+Rawr.TextLabel_28.Text = "Remove Traffic Sounds"
+Rawr.TextLabel_28.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_28.TextSize = 21.000
+Rawr.TextLabel_28.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_29.Parent = Rawr.SoundRemoverButton
+Rawr.TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_29.BackgroundTransparency = 1.000
+Rawr.TextLabel_29.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_29.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_29.Font = Enum.Font.Arial
+Rawr.TextLabel_29.Text = "Removes The Background Noise."
+Rawr.TextLabel_29.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_29.TextSize = 14.000
+Rawr.TextLabel_29.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_14.Parent = Rawr.SoundRemoverButton
+Rawr.ImageLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_14.BackgroundTransparency = 1.000
+Rawr.ImageLabel_14.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_14.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_14.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_21.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_21.Parent = Rawr.SoundRemoverButton
+
+Rawr.ModsPage.Name = "ModsPage"
+Rawr.ModsPage.Parent = Rawr.Pages
+Rawr.ModsPage.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Rawr.ModsPage.Position = UDim2.new(1.34436429, 0, 0.133858263, 0)
+Rawr.ModsPage.Size = UDim2.new(0, 480, 0, 304)
+Rawr.ModsPage.Visible = false
+
+Rawr.UICorner_22.Parent = Rawr.ModsPage
+
+Rawr.ScrollingFrame_3.Parent = Rawr.ModsPage
+Rawr.ScrollingFrame_3.Active = true
+Rawr.ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ScrollingFrame_3.BackgroundTransparency = 1.000
+Rawr.ScrollingFrame_3.BorderSizePixel = 0
+Rawr.ScrollingFrame_3.Position = UDim2.new(0.0130902613, 0, 0.0200159177, 0)
+Rawr.ScrollingFrame_3.Size = UDim2.new(0, 473, 0, 286)
+Rawr.ScrollingFrame_3.CanvasSize = UDim2.new(0, 0, 1.64999998, 0)
+Rawr.ScrollingFrame_3.ScrollBarThickness = 5
+
+Rawr.UIListLayout_3.Parent = Rawr.ScrollingFrame_3
+Rawr.UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+Rawr.UIListLayout_3.Padding = UDim.new(0, 2)
+
+Rawr.InfiniteAmmoButton.Name = "InfiniteAmmoButton"
+Rawr.InfiniteAmmoButton.Parent = Rawr.ScrollingFrame_3
+Rawr.InfiniteAmmoButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.InfiniteAmmoButton.Position = UDim2.new(0, 0, 0.657342672, 0)
+Rawr.InfiniteAmmoButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.InfiniteAmmoButton.Font = Enum.Font.Arial
+Rawr.InfiniteAmmoButton.Text = " "
+Rawr.InfiniteAmmoButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.InfiniteAmmoButton.TextSize = 14.000
+
+Rawr.TextLabel_30.Parent = Rawr.InfiniteAmmoButton
+Rawr.TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_30.BackgroundTransparency = 1.000
+Rawr.TextLabel_30.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_30.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_30.Font = Enum.Font.Arial
+Rawr.TextLabel_30.Text = "Infinite Ammo"
+Rawr.TextLabel_30.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_30.TextSize = 21.000
+Rawr.TextLabel_30.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_31.Parent = Rawr.InfiniteAmmoButton
+Rawr.TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_31.BackgroundTransparency = 1.000
+Rawr.TextLabel_31.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_31.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_31.Font = Enum.Font.Arial
+Rawr.TextLabel_31.Text = "Gives Your Gun Infinite Ammo."
+Rawr.TextLabel_31.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_31.TextSize = 14.000
+Rawr.TextLabel_31.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_15.Parent = Rawr.InfiniteAmmoButton
+Rawr.ImageLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_15.BackgroundTransparency = 1.000
+Rawr.ImageLabel_15.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_15.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_15.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_23.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_23.Parent = Rawr.InfiniteAmmoButton
+
+Rawr.RecoilButton.Name = "RecoilButton"
+Rawr.RecoilButton.Parent = Rawr.ScrollingFrame_3
+Rawr.RecoilButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.RecoilButton.Position = UDim2.new(0, 0, 0.657342672, 0)
+Rawr.RecoilButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.RecoilButton.Font = Enum.Font.Arial
+Rawr.RecoilButton.Text = " "
+Rawr.RecoilButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.RecoilButton.TextSize = 14.000
+
+Rawr.TextLabel_32.Parent = Rawr.RecoilButton
+Rawr.TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_32.BackgroundTransparency = 1.000
+Rawr.TextLabel_32.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_32.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_32.Font = Enum.Font.Arial
+Rawr.TextLabel_32.Text = "Recoil Customization"
+Rawr.TextLabel_32.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_32.TextSize = 21.000
+Rawr.TextLabel_32.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_33.Parent = Rawr.RecoilButton
+Rawr.TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_33.BackgroundTransparency = 1.000
+Rawr.TextLabel_33.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_33.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_33.Font = Enum.Font.Arial
+Rawr.TextLabel_33.Text = "Customize Recoil On Guns."
+Rawr.TextLabel_33.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_33.TextSize = 14.000
+Rawr.TextLabel_33.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_16.Parent = Rawr.RecoilButton
+Rawr.ImageLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_16.BackgroundTransparency = 1.000
+Rawr.ImageLabel_16.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_16.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_16.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_24.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_24.Parent = Rawr.RecoilButton
+
+Rawr.RecoilBox.Name = "RecoilBox"
+Rawr.RecoilBox.Parent = Rawr.ScrollingFrame_3
+Rawr.RecoilBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.RecoilBox.Position = UDim2.new(0, 0, 0.493007004, 0)
+Rawr.RecoilBox.Size = UDim2.new(0, 448, 0, 45)
+Rawr.RecoilBox.Font = Enum.Font.Arial
+Rawr.RecoilBox.Text = "Amount Of Recoil You Want Here."
+Rawr.RecoilBox.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.RecoilBox.TextSize = 21.000
+Rawr.RecoilBox.TextWrapped = true
+
+Rawr.UICorner_25.CornerRadius = UDim.new(0.0900000036, 0)
+Rawr.UICorner_25.Parent = Rawr.RecoilBox
+
+Rawr.PlayerPage.Name = "PlayerPage"
+Rawr.PlayerPage.Parent = Rawr.Pages
+Rawr.PlayerPage.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Rawr.PlayerPage.Position = UDim2.new(1.34436429, 0, 0.133858263, 0)
+Rawr.PlayerPage.Size = UDim2.new(0, 480, 0, 304)
+Rawr.PlayerPage.Visible = false
+
+Rawr.UICorner_26.Parent = Rawr.PlayerPage
+
+Rawr.ScrollingFrame_4.Parent = Rawr.PlayerPage
+Rawr.ScrollingFrame_4.Active = true
+Rawr.ScrollingFrame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ScrollingFrame_4.BackgroundTransparency = 1.000
+Rawr.ScrollingFrame_4.BorderSizePixel = 0
+Rawr.ScrollingFrame_4.Position = UDim2.new(0.0130902613, 0, 0.0200159177, 0)
+Rawr.ScrollingFrame_4.Size = UDim2.new(0, 473, 0, 286)
+Rawr.ScrollingFrame_4.CanvasPosition = Vector2.new(0, 215.600006)
+Rawr.ScrollingFrame_4.CanvasSize = UDim2.new(0, 0, 1.64999998, 0)
+Rawr.ScrollingFrame_4.ScrollBarThickness = 5
+
+Rawr.UIListLayout_4.Parent = Rawr.ScrollingFrame_4
+Rawr.UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+Rawr.UIListLayout_4.Padding = UDim.new(0, 2)
+
+Rawr.CustomLevelButton.Name = "CustomLevelButton"
+Rawr.CustomLevelButton.Parent = Rawr.ScrollingFrame_4
+Rawr.CustomLevelButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.CustomLevelButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.CustomLevelButton.Font = Enum.Font.Arial
+Rawr.CustomLevelButton.Text = " "
+Rawr.CustomLevelButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.CustomLevelButton.TextSize = 14.000
+
+Rawr.TextLabel_34.Parent = Rawr.CustomLevelButton
+Rawr.TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_34.BackgroundTransparency = 1.000
+Rawr.TextLabel_34.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
+Rawr.TextLabel_34.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_34.Font = Enum.Font.Arial
+Rawr.TextLabel_34.Text = "Custom Level"
+Rawr.TextLabel_34.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_34.TextSize = 21.000
+Rawr.TextLabel_34.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_35.Parent = Rawr.CustomLevelButton
+Rawr.TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_35.BackgroundTransparency = 1.000
+Rawr.TextLabel_35.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_35.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_35.Font = Enum.Font.Arial
+Rawr.TextLabel_35.Text = "Gives You A Custom Level. (CLIENT SIDED ONLY)"
+Rawr.TextLabel_35.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_35.TextSize = 14.000
+Rawr.TextLabel_35.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_17.Parent = Rawr.CustomLevelButton
+Rawr.ImageLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_17.BackgroundTransparency = 1.000
+Rawr.ImageLabel_17.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_17.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_17.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_27.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_27.Parent = Rawr.CustomLevelButton
+
+Rawr.CustomLevelBox.Name = "CustomLevelBox"
+Rawr.CustomLevelBox.Parent = Rawr.ScrollingFrame_4
+Rawr.CustomLevelBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.CustomLevelBox.Position = UDim2.new(0, 0, 0.164335668, 0)
+Rawr.CustomLevelBox.Size = UDim2.new(0, 448, 0, 45)
+Rawr.CustomLevelBox.Font = Enum.Font.Arial
+Rawr.CustomLevelBox.Text = "Your Custom Level Here."
+Rawr.CustomLevelBox.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.CustomLevelBox.TextSize = 21.000
+Rawr.CustomLevelBox.TextWrapped = true
+
+Rawr.UICorner_28.CornerRadius = UDim.new(0.0900000036, 0)
+Rawr.UICorner_28.Parent = Rawr.CustomLevelBox
+
+Rawr.CustomNameButton.Name = "CustomNameButton"
+Rawr.CustomNameButton.Parent = Rawr.ScrollingFrame_4
+Rawr.CustomNameButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.CustomNameButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.CustomNameButton.Font = Enum.Font.Arial
+Rawr.CustomNameButton.Text = " "
+Rawr.CustomNameButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.CustomNameButton.TextSize = 14.000
+
+Rawr.TextLabel_36.Parent = Rawr.CustomNameButton
+Rawr.TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_36.BackgroundTransparency = 1.000
+Rawr.TextLabel_36.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
+Rawr.TextLabel_36.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_36.Font = Enum.Font.Arial
+Rawr.TextLabel_36.Text = "Custom Name"
+Rawr.TextLabel_36.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_36.TextSize = 21.000
+Rawr.TextLabel_36.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_37.Parent = Rawr.CustomNameButton
+Rawr.TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_37.BackgroundTransparency = 1.000
+Rawr.TextLabel_37.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_37.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_37.Font = Enum.Font.Arial
+Rawr.TextLabel_37.Text = "Gives You A Custom Name. (CLIENT SIDED ONLY)"
+Rawr.TextLabel_37.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_37.TextSize = 14.000
+Rawr.TextLabel_37.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_18.Parent = Rawr.CustomNameButton
+Rawr.ImageLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_18.BackgroundTransparency = 1.000
+Rawr.ImageLabel_18.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_18.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_18.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_29.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_29.Parent = Rawr.CustomNameButton
+
+Rawr.CustomNameBox.Name = "CustomNameBox"
+Rawr.CustomNameBox.Parent = Rawr.ScrollingFrame_4
+Rawr.CustomNameBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.CustomNameBox.Position = UDim2.new(0, 0, 0.164335668, 0)
+Rawr.CustomNameBox.Size = UDim2.new(0, 448, 0, 45)
+Rawr.CustomNameBox.Font = Enum.Font.Arial
+Rawr.CustomNameBox.Text = "Your Custom Name Here."
+Rawr.CustomNameBox.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.CustomNameBox.TextSize = 21.000
+Rawr.CustomNameBox.TextWrapped = true
+
+Rawr.UICorner_30.CornerRadius = UDim.new(0.0900000036, 0)
+Rawr.UICorner_30.Parent = Rawr.CustomNameBox
+
+Rawr.WalkSpeedButton.Name = "WalkSpeedButton"
+Rawr.WalkSpeedButton.Parent = Rawr.ScrollingFrame_4
+Rawr.WalkSpeedButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.WalkSpeedButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.WalkSpeedButton.Font = Enum.Font.Arial
+Rawr.WalkSpeedButton.Text = " "
+Rawr.WalkSpeedButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.WalkSpeedButton.TextSize = 14.000
+
+Rawr.TextLabel_38.Parent = Rawr.WalkSpeedButton
+Rawr.TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_38.BackgroundTransparency = 1.000
+Rawr.TextLabel_38.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
+Rawr.TextLabel_38.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_38.Font = Enum.Font.Arial
+Rawr.TextLabel_38.Text = "Walk Speed"
+Rawr.TextLabel_38.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_38.TextSize = 21.000
+Rawr.TextLabel_38.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_39.Parent = Rawr.WalkSpeedButton
+Rawr.TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_39.BackgroundTransparency = 1.000
+Rawr.TextLabel_39.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_39.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_39.Font = Enum.Font.Arial
+Rawr.TextLabel_39.Text = "Changes Your WalkSpeed."
+Rawr.TextLabel_39.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_39.TextSize = 14.000
+Rawr.TextLabel_39.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_19.Parent = Rawr.WalkSpeedButton
+Rawr.ImageLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_19.BackgroundTransparency = 1.000
+Rawr.ImageLabel_19.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_19.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_19.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_31.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_31.Parent = Rawr.WalkSpeedButton
+
+Rawr.WalkSpeedBox.Name = "WalkSpeedBox"
+Rawr.WalkSpeedBox.Parent = Rawr.ScrollingFrame_4
+Rawr.WalkSpeedBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.WalkSpeedBox.Position = UDim2.new(0, 0, 0.164335668, 0)
+Rawr.WalkSpeedBox.Size = UDim2.new(0, 448, 0, 45)
+Rawr.WalkSpeedBox.Font = Enum.Font.Arial
+Rawr.WalkSpeedBox.Text = "Walk Speed Here."
+Rawr.WalkSpeedBox.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.WalkSpeedBox.TextSize = 21.000
+Rawr.WalkSpeedBox.TextWrapped = true
+
+Rawr.UICorner_32.CornerRadius = UDim.new(0.0900000036, 0)
+Rawr.UICorner_32.Parent = Rawr.WalkSpeedBox
+
+Rawr.RemoveTicketButton.Name = "RemoveTicketButton"
+Rawr.RemoveTicketButton.Parent = Rawr.ScrollingFrame_4
+Rawr.RemoveTicketButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.RemoveTicketButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.RemoveTicketButton.Font = Enum.Font.Arial
+Rawr.RemoveTicketButton.Text = " "
+Rawr.RemoveTicketButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.RemoveTicketButton.TextSize = 14.000
+
+Rawr.TextLabel_40.Parent = Rawr.RemoveTicketButton
+Rawr.TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_40.BackgroundTransparency = 1.000
+Rawr.TextLabel_40.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
+Rawr.TextLabel_40.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_40.Font = Enum.Font.Arial
+Rawr.TextLabel_40.Text = "Remove Ticket"
+Rawr.TextLabel_40.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_40.TextSize = 21.000
+Rawr.TextLabel_40.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_41.Parent = Rawr.RemoveTicketButton
+Rawr.TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_41.BackgroundTransparency = 1.000
+Rawr.TextLabel_41.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_41.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_41.Font = Enum.Font.Arial
+Rawr.TextLabel_41.Text = "Removes Your Ticket / Tickets."
+Rawr.TextLabel_41.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_41.TextSize = 14.000
+Rawr.TextLabel_41.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_20.Parent = Rawr.RemoveTicketButton
+Rawr.ImageLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_20.BackgroundTransparency = 1.000
+Rawr.ImageLabel_20.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_20.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_20.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_33.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_33.Parent = Rawr.RemoveTicketButton
+
+Rawr.InfSkittlesButton.Name = "InfSkittlesButton"
+Rawr.InfSkittlesButton.Parent = Rawr.ScrollingFrame_4
+Rawr.InfSkittlesButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.InfSkittlesButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.InfSkittlesButton.Font = Enum.Font.Arial
+Rawr.InfSkittlesButton.Text = " "
+Rawr.InfSkittlesButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.InfSkittlesButton.TextSize = 14.000
+
+Rawr.TextLabel_42.Parent = Rawr.InfSkittlesButton
+Rawr.TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_42.BackgroundTransparency = 1.000
+Rawr.TextLabel_42.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
+Rawr.TextLabel_42.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_42.Font = Enum.Font.Arial
+Rawr.TextLabel_42.Text = "Skittles Effect"
+Rawr.TextLabel_42.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_42.TextSize = 21.000
+Rawr.TextLabel_42.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_43.Parent = Rawr.InfSkittlesButton
+Rawr.TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_43.BackgroundTransparency = 1.000
+Rawr.TextLabel_43.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_43.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_43.Font = Enum.Font.Arial
+Rawr.TextLabel_43.Text = "Gives You The Skittles Effect."
+Rawr.TextLabel_43.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_43.TextSize = 14.000
+Rawr.TextLabel_43.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_21.Parent = Rawr.InfSkittlesButton
+Rawr.ImageLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_21.BackgroundTransparency = 1.000
+Rawr.ImageLabel_21.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_21.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_21.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_34.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_34.Parent = Rawr.InfSkittlesButton
+
+Rawr.InfKarmaButton.Name = "InfKarmaButton"
+Rawr.InfKarmaButton.Parent = Rawr.ScrollingFrame_4
+Rawr.InfKarmaButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.InfKarmaButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.InfKarmaButton.Font = Enum.Font.Arial
+Rawr.InfKarmaButton.Text = " "
+Rawr.InfKarmaButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.InfKarmaButton.TextSize = 14.000
+
+Rawr.TextLabel_44.Parent = Rawr.InfKarmaButton
+Rawr.TextLabel_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_44.BackgroundTransparency = 1.000
+Rawr.TextLabel_44.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
+Rawr.TextLabel_44.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_44.Font = Enum.Font.Arial
+Rawr.TextLabel_44.Text = "Infinite Karma"
+Rawr.TextLabel_44.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_44.TextSize = 21.000
+Rawr.TextLabel_44.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_45.Parent = Rawr.InfKarmaButton
+Rawr.TextLabel_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_45.BackgroundTransparency = 1.000
+Rawr.TextLabel_45.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_45.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_45.Font = Enum.Font.Arial
+Rawr.TextLabel_45.Text = "Gives You Infinite Karma."
+Rawr.TextLabel_45.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_45.TextSize = 14.000
+Rawr.TextLabel_45.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_22.Parent = Rawr.InfKarmaButton
+Rawr.ImageLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_22.BackgroundTransparency = 1.000
+Rawr.ImageLabel_22.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_22.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_22.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_35.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_35.Parent = Rawr.InfKarmaButton
+
+Rawr.FlyButton.Name = "FlyButton"
+Rawr.FlyButton.Parent = Rawr.ScrollingFrame_4
+Rawr.FlyButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.FlyButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.FlyButton.Font = Enum.Font.Arial
+Rawr.FlyButton.Text = " "
+Rawr.FlyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.FlyButton.TextSize = 14.000
+
+Rawr.TextLabel_46.Parent = Rawr.FlyButton
+Rawr.TextLabel_46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_46.BackgroundTransparency = 1.000
+Rawr.TextLabel_46.Position = UDim2.new(0.0193737336, 0, -0.0155555587, 0)
+Rawr.TextLabel_46.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_46.Font = Enum.Font.Arial
+Rawr.TextLabel_46.Text = "Fly"
+Rawr.TextLabel_46.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_46.TextSize = 21.000
+Rawr.TextLabel_46.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_47.Parent = Rawr.FlyButton
+Rawr.TextLabel_47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_47.BackgroundTransparency = 1.000
+Rawr.TextLabel_47.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_47.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_47.Font = Enum.Font.Arial
+Rawr.TextLabel_47.Text = "Makes Your Character Fly."
+Rawr.TextLabel_47.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_47.TextSize = 14.000
+Rawr.TextLabel_47.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_23.Parent = Rawr.FlyButton
+Rawr.ImageLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_23.BackgroundTransparency = 1.000
+Rawr.ImageLabel_23.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_23.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_23.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_36.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_36.Parent = Rawr.FlyButton
+
+Rawr.TrollPage.Name = "TrollPage"
+Rawr.TrollPage.Parent = Rawr.Pages
+Rawr.TrollPage.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Rawr.TrollPage.Position = UDim2.new(1.34436429, 0, 0.133858263, 0)
+Rawr.TrollPage.Size = UDim2.new(0, 480, 0, 304)
+Rawr.TrollPage.Visible = false
+
+Rawr.UICorner_37.Parent = Rawr.TrollPage
+
+Rawr.ScrollingFrame_5.Parent = Rawr.TrollPage
+Rawr.ScrollingFrame_5.Active = true
+Rawr.ScrollingFrame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ScrollingFrame_5.BackgroundTransparency = 1.000
+Rawr.ScrollingFrame_5.BorderSizePixel = 0
+Rawr.ScrollingFrame_5.Position = UDim2.new(0.0130902613, 0, 0.0200159177, 0)
+Rawr.ScrollingFrame_5.Size = UDim2.new(0, 473, 0, 286)
+Rawr.ScrollingFrame_5.CanvasSize = UDim2.new(0, 0, 1.64999998, 0)
+Rawr.ScrollingFrame_5.ScrollBarThickness = 5
+
+Rawr.UIListLayout_5.Parent = Rawr.ScrollingFrame_5
+Rawr.UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+Rawr.UIListLayout_5.Padding = UDim.new(0, 2)
+
+Rawr.SizeChangerButton.Name = "SizeChangerButton"
+Rawr.SizeChangerButton.Parent = Rawr.ScrollingFrame_5
+Rawr.SizeChangerButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.SizeChangerButton.Position = UDim2.new(0, 0, 0.657342672, 0)
+Rawr.SizeChangerButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.SizeChangerButton.Font = Enum.Font.Arial
+Rawr.SizeChangerButton.Text = " "
+Rawr.SizeChangerButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.SizeChangerButton.TextSize = 14.000
+
+Rawr.TextLabel_48.Parent = Rawr.SizeChangerButton
+Rawr.TextLabel_48.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_48.BackgroundTransparency = 1.000
+Rawr.TextLabel_48.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_48.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_48.Font = Enum.Font.Arial
+Rawr.TextLabel_48.Text = "Size Changer"
+Rawr.TextLabel_48.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_48.TextSize = 21.000
+Rawr.TextLabel_48.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_49.Parent = Rawr.SizeChangerButton
+Rawr.TextLabel_49.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_49.BackgroundTransparency = 1.000
+Rawr.TextLabel_49.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_49.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_49.Font = Enum.Font.Arial
+Rawr.TextLabel_49.Text = "Changes Your Characters Height / Width FE."
+Rawr.TextLabel_49.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_49.TextSize = 14.000
+Rawr.TextLabel_49.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_24.Parent = Rawr.SizeChangerButton
+Rawr.ImageLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_24.BackgroundTransparency = 1.000
+Rawr.ImageLabel_24.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_24.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_24.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_38.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_38.Parent = Rawr.SizeChangerButton
+
+Rawr.DeadButton.Name = "DeadButton"
+Rawr.DeadButton.Parent = Rawr.ScrollingFrame_5
+Rawr.DeadButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.DeadButton.Position = UDim2.new(0, 0, 0.164335668, 0)
+Rawr.DeadButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.DeadButton.Font = Enum.Font.Arial
+Rawr.DeadButton.Text = " "
+Rawr.DeadButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.DeadButton.TextSize = 14.000
+
+Rawr.TextLabel_50.Parent = Rawr.DeadButton
+Rawr.TextLabel_50.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_50.BackgroundTransparency = 1.000
+Rawr.TextLabel_50.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_50.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_50.Font = Enum.Font.Arial
+Rawr.TextLabel_50.Text = "Suicide"
+Rawr.TextLabel_50.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_50.TextSize = 21.000
+Rawr.TextLabel_50.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_51.Parent = Rawr.DeadButton
+Rawr.TextLabel_51.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_51.BackgroundTransparency = 1.000
+Rawr.TextLabel_51.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_51.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_51.Font = Enum.Font.Arial
+Rawr.TextLabel_51.Text = "Kill Yourself."
+Rawr.TextLabel_51.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_51.TextSize = 14.000
+Rawr.TextLabel_51.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_25.Parent = Rawr.DeadButton
+Rawr.ImageLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_25.BackgroundTransparency = 1.000
+Rawr.ImageLabel_25.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_25.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_25.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_39.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_39.Parent = Rawr.DeadButton
+
+Rawr.FireButton.Name = "FireButton"
+Rawr.FireButton.Parent = Rawr.ScrollingFrame_5
+Rawr.FireButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.FireButton.Position = UDim2.new(0, 0, 0.328671336, 0)
+Rawr.FireButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.FireButton.Font = Enum.Font.Arial
+Rawr.FireButton.Text = " "
+Rawr.FireButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.FireButton.TextSize = 14.000
+
+Rawr.TextLabel_52.Parent = Rawr.FireButton
+Rawr.TextLabel_52.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_52.BackgroundTransparency = 1.000
+Rawr.TextLabel_52.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_52.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_52.Font = Enum.Font.Arial
+Rawr.TextLabel_52.Text = "Fire Hands"
+Rawr.TextLabel_52.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_52.TextSize = 21.000
+Rawr.TextLabel_52.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_53.Parent = Rawr.FireButton
+Rawr.TextLabel_53.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_53.BackgroundTransparency = 1.000
+Rawr.TextLabel_53.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_53.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_53.Font = Enum.Font.Arial
+Rawr.TextLabel_53.Text = "Lights Your Hands On Fire."
+Rawr.TextLabel_53.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_53.TextSize = 14.000
+Rawr.TextLabel_53.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_26.Parent = Rawr.FireButton
+Rawr.ImageLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_26.BackgroundTransparency = 1.000
+Rawr.ImageLabel_26.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_26.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_26.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_40.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_40.Parent = Rawr.FireButton
+
+Rawr.NoFaceButton.Name = "NoFaceButton"
+Rawr.NoFaceButton.Parent = Rawr.ScrollingFrame_5
+Rawr.NoFaceButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.NoFaceButton.Position = UDim2.new(0, 0, 0.493007004, 0)
+Rawr.NoFaceButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.NoFaceButton.Font = Enum.Font.Arial
+Rawr.NoFaceButton.Text = " "
+Rawr.NoFaceButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.NoFaceButton.TextSize = 14.000
+
+Rawr.TextLabel_54.Parent = Rawr.NoFaceButton
+Rawr.TextLabel_54.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_54.BackgroundTransparency = 1.000
+Rawr.TextLabel_54.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_54.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_54.Font = Enum.Font.Arial
+Rawr.TextLabel_54.Text = "No Face"
+Rawr.TextLabel_54.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_54.TextSize = 21.000
+Rawr.TextLabel_54.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_55.Parent = Rawr.NoFaceButton
+Rawr.TextLabel_55.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_55.BackgroundTransparency = 1.000
+Rawr.TextLabel_55.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_55.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_55.Font = Enum.Font.Arial
+Rawr.TextLabel_55.Text = "Removes Your Face."
+Rawr.TextLabel_55.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_55.TextSize = 14.000
+Rawr.TextLabel_55.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_27.Parent = Rawr.NoFaceButton
+Rawr.ImageLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_27.BackgroundTransparency = 1.000
+Rawr.ImageLabel_27.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_27.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_27.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_41.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_41.Parent = Rawr.NoFaceButton
+
+Rawr.HeadlessButton.Name = "HeadlessButton"
+Rawr.HeadlessButton.Parent = Rawr.ScrollingFrame_5
+Rawr.HeadlessButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.HeadlessButton.Position = UDim2.new(0, 0, 0.657342672, 0)
+Rawr.HeadlessButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.HeadlessButton.Font = Enum.Font.Arial
+Rawr.HeadlessButton.Text = " "
+Rawr.HeadlessButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.HeadlessButton.TextSize = 14.000
+
+Rawr.TextLabel_56.Parent = Rawr.HeadlessButton
+Rawr.TextLabel_56.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_56.BackgroundTransparency = 1.000
+Rawr.TextLabel_56.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_56.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_56.Font = Enum.Font.Arial
+Rawr.TextLabel_56.Text = "Remove Head"
+Rawr.TextLabel_56.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_56.TextSize = 21.000
+Rawr.TextLabel_56.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_57.Parent = Rawr.HeadlessButton
+Rawr.TextLabel_57.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_57.BackgroundTransparency = 1.000
+Rawr.TextLabel_57.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_57.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_57.Font = Enum.Font.Arial
+Rawr.TextLabel_57.Text = "Makes You Headless."
+Rawr.TextLabel_57.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_57.TextSize = 14.000
+Rawr.TextLabel_57.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_28.Parent = Rawr.HeadlessButton
+Rawr.ImageLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_28.BackgroundTransparency = 1.000
+Rawr.ImageLabel_28.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_28.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_28.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_42.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_42.Parent = Rawr.HeadlessButton
+
+Rawr.BoomBoxButton.Name = "BoomBoxButton"
+Rawr.BoomBoxButton.Parent = Rawr.ScrollingFrame_5
+Rawr.BoomBoxButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Rawr.BoomBoxButton.Position = UDim2.new(0, 0, 0.592307806, 0)
+Rawr.BoomBoxButton.Size = UDim2.new(0, 448, 0, 45)
+Rawr.BoomBoxButton.Font = Enum.Font.Arial
+Rawr.BoomBoxButton.Text = " "
+Rawr.BoomBoxButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.BoomBoxButton.TextSize = 14.000
+
+Rawr.TextLabel_58.Parent = Rawr.BoomBoxButton
+Rawr.TextLabel_58.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_58.BackgroundTransparency = 1.000
+Rawr.TextLabel_58.Position = UDim2.new(0.0193737354, 0, -0.0377777815, 0)
+Rawr.TextLabel_58.Size = UDim2.new(0, 154, 0, 34)
+Rawr.TextLabel_58.Font = Enum.Font.Arial
+Rawr.TextLabel_58.Text = "BoomBox"
+Rawr.TextLabel_58.TextColor3 = Color3.fromRGB(231, 231, 231)
+Rawr.TextLabel_58.TextSize = 21.000
+Rawr.TextLabel_58.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.TextLabel_59.Parent = Rawr.BoomBoxButton
+Rawr.TextLabel_59.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.TextLabel_59.BackgroundTransparency = 1.000
+Rawr.TextLabel_59.Position = UDim2.new(0.0193737056, 0, 0.539999723, 0)
+Rawr.TextLabel_59.Size = UDim2.new(0, 154, 0, 20)
+Rawr.TextLabel_59.Font = Enum.Font.Arial
+Rawr.TextLabel_59.Text = "Gives You A BoomBox."
+Rawr.TextLabel_59.TextColor3 = Color3.fromRGB(199, 199, 199)
+Rawr.TextLabel_59.TextSize = 14.000
+Rawr.TextLabel_59.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ImageLabel_29.Parent = Rawr.BoomBoxButton
+Rawr.ImageLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.ImageLabel_29.BackgroundTransparency = 1.000
+Rawr.ImageLabel_29.Position = UDim2.new(0.886016428, 0, 0.0377777815, 0)
+Rawr.ImageLabel_29.Size = UDim2.new(0, 44, 0, 43)
+Rawr.ImageLabel_29.Image = "http://www.roblox.com/asset/?id=11909244136"
+
+Rawr.UICorner_43.CornerRadius = UDim.new(0, 6)
+Rawr.UICorner_43.Parent = Rawr.BoomBoxButton
+
+Rawr.SideHolder.Name = "SideHolder"
+Rawr.SideHolder.Parent = Rawr.Frame
+Rawr.SideHolder.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Rawr.SideHolder.BackgroundTransparency = 0.300
+Rawr.SideHolder.Position = UDim2.new(1.030303, 0, 0.0033307292, 0)
+Rawr.SideHolder.Size = UDim2.new(0, 290, 0, 381)
+
+Rawr.UICorner_44.Parent = Rawr.SideHolder
+
+Rawr.PlayerUsername.Name = "PlayerUsername"
+Rawr.PlayerUsername.Parent = Rawr.SideHolder
+Rawr.PlayerUsername.AnchorPoint = Vector2.new(0.5, 0.5)
+Rawr.PlayerUsername.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.PlayerUsername.BackgroundTransparency = 1.000
+Rawr.PlayerUsername.BorderSizePixel = 0
+Rawr.PlayerUsername.Position = UDim2.new(0.196033105, 0, 0.951009333, 0)
+Rawr.PlayerUsername.Size = UDim2.new(0, 101, 0, 35)
+Rawr.PlayerUsername.Font = Enum.Font.GothamBold
+Rawr.PlayerUsername.Text = "Welcome :"
+Rawr.PlayerUsername.TextColor3 = Color3.fromRGB(200, 200, 200)
+Rawr.PlayerUsername.TextSize = 19.000
+Rawr.PlayerUsername.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.PlayerAvatar.Name = "PlayerAvatar"
+Rawr.PlayerAvatar.Parent = Rawr.SideHolder
+Rawr.PlayerAvatar.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Rawr.PlayerAvatar.BackgroundTransparency = 1.000
+Rawr.PlayerAvatar.Position = UDim2.new(0.772896051, 0, 0.88652122, 0)
+Rawr.PlayerAvatar.Size = UDim2.new(0, 50, 0, 42)
+Rawr.PlayerAvatar.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+Rawr.UICorner_45.Parent = Rawr.PlayerAvatar
+
+Rawr.discord.Name = "discord"
+Rawr.discord.Parent = Rawr.SideHolder
+Rawr.discord.AnchorPoint = Vector2.new(0.5, 0.5)
+Rawr.discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rawr.discord.BackgroundTransparency = 1.000
+Rawr.discord.BorderSizePixel = 0
+Rawr.discord.Position = UDim2.new(0.220171034, 0, 0.0656759888, 0)
+Rawr.discord.Size = UDim2.new(0, 101, 0, 35)
+Rawr.discord.Font = Enum.Font.GothamBold
+Rawr.discord.Text = "discord.gg/UBMbcGt5Jp"
+Rawr.discord.TextColor3 = Color3.fromRGB(200, 200, 200)
+Rawr.discord.TextSize = 19.000
+Rawr.discord.TextXAlignment = Enum.TextXAlignment.Left
+
+Rawr.ShadowRightSide.Name = "ShadowRightSide"
+Rawr.ShadowRightSide.Parent = Rawr.Frame
+Rawr.ShadowRightSide.AnchorPoint = Vector2.new(0.5, 0.5)
+Rawr.ShadowRightSide.BackgroundTransparency = 1.000
+Rawr.ShadowRightSide.BorderSizePixel = 0
+Rawr.ShadowRightSide.Position = UDim2.new(1.29144382, 0, 0.511088073, 0)
+Rawr.ShadowRightSide.Size = UDim2.new(0.540107012, 47, 1.05263174, 47)
+Rawr.ShadowRightSide.ZIndex = 0
+Rawr.ShadowRightSide.Image = "rbxassetid://6014261993"
+Rawr.ShadowRightSide.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.ShadowRightSide.ImageTransparency = 0.500
+Rawr.ShadowRightSide.ScaleType = Enum.ScaleType.Slice
+Rawr.ShadowRightSide.SliceCenter = Rect.new(49, 49, 450, 450)
+
+Rawr.ShadowLeftSide.Name = "ShadowLeftSide"
+Rawr.ShadowLeftSide.Parent = Rawr.Frame
+Rawr.ShadowLeftSide.AnchorPoint = Vector2.new(0.5, 0.5)
+Rawr.ShadowLeftSide.BackgroundTransparency = 1.000
+Rawr.ShadowLeftSide.BorderSizePixel = 0
+Rawr.ShadowLeftSide.Position = UDim2.new(-0.188057095, 0, 0.511088073, 0)
+Rawr.ShadowLeftSide.Size = UDim2.new(0.32976833, 47, 1.05263174, 47)
+Rawr.ShadowLeftSide.ZIndex = 0
+Rawr.ShadowLeftSide.Image = "rbxassetid://6014261993"
+Rawr.ShadowLeftSide.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Rawr.ShadowLeftSide.ImageTransparency = 0.500
+Rawr.ShadowLeftSide.ScaleType = Enum.ScaleType.Slice
+Rawr.ShadowLeftSide.SliceCenter = Rect.new(49, 49, 450, 450)
 
 -- Scripts:
 
-local function YFZGL_fake_script() -- ScreenGui.Pages.mmm - Gelato 
-	local script = Instance.new('LocalScript', ScreenGui.Pages)
+local function TVWBQZH_fake_script() -- Rawr.Pages.mmm - Gelato 
+	local script = Instance.new('LocalScript', Rawr.Pages)
 
 	local Pages = script.Parent
 	local MainPage = Pages.MainPage
@@ -2166,9 +2167,9 @@ local function YFZGL_fake_script() -- ScreenGui.Pages.mmm - Gelato
 		loadstring(_G.boomboxb.Server.Source)()
 	end)
 end
-coroutine.wrap(YFZGL_fake_script)()
-local function ZMJYPY_fake_script() -- ScreenGui.SideHolder.Avatar / Name 
-	local script = Instance.new('LocalScript', ScreenGui.SideHolder)
+coroutine.wrap(TVWBQZH_fake_script)()
+local function GYSFCOQ_fake_script() -- Rawr.SideHolder.Avatar / Name 
+	local script = Instance.new('LocalScript', Rawr.SideHolder)
 
 	local player = game.Players.LocalPlayer
 	local userId = player.UserId
@@ -2179,9 +2180,9 @@ local function ZMJYPY_fake_script() -- ScreenGui.SideHolder.Avatar / Name
 	script.Parent:WaitForChild('PlayerAvatar').Image = content
 	script.Parent:WaitForChild('PlayerUsername').Text = "Welcome : "..player.Name
 end
-coroutine.wrap(ZMJYPY_fake_script)()
-local function DRQC_fake_script() -- ScreenGui.Frame.Ball 
-	local script = Instance.new('LocalScript', ScreenGui.Frame)
+coroutine.wrap(GYSFCOQ_fake_script)()
+local function FCOZC_fake_script() -- Rawr.Frame.Ball 
+	local script = Instance.new('LocalScript', Rawr.Frame)
 
 	
 	
@@ -2367,4 +2368,4 @@ local function DRQC_fake_script() -- ScreenGui.Frame.Ball
 		Pages.TrollPage.Visible = false
 	end)
 end
-coroutine.wrap(DRQC_fake_script)()
+coroutine.wrap(FCOZC_fake_script)()
