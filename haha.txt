@@ -2203,51 +2203,14 @@ local function FCOZC_fake_script() -- Rawr.Frame.Ball
 	------------
 	
 	
-	local ADV = {
-		Grah1 = "No.. Stop Buddy...",
-		Grah2 = "Buckaroo! You Can't Use It In This Remake!",
-		Grah3 = "Bad Boy!",
-		Grah4 = "Smelly Monkey",
-		Grah5 = "No! Stop.",
-		Grah6 = "XD No.",
-		Grah7 = "Gangy! No That's Bad.",
-	    Grah8 = "Gangnem! Stop Using It In This Remake.",
-		Grah9 = "GRAH GRAH BOOM!",
-		Grah10 = "Patched By Gelato#0002 In This Remake Buckaroo!"
-	}
+
 	
 	if table.find(BannedFromIguana, Player.UserId) then
 		Player:Kick(Player.Name.. " Is Blacklisted From Using Iguana Hub.")
 	end
 	
 	
-	if game.PlaceId == 12468132621 then
-	
-	local ADVGen = math.random(1,10)
-	
-	if ADVGen == 1 then
-		A1 = ADV.Grah1
-	elseif ADVGen == 2 then
-		A1 = ADV.Grah2
-	elseif ADVGen == 3 then
-		A1 = ADV.Grah3
-	elseif ADVGen == 4 then
-		A1 = ADV.Grah4
-	elseif ADVGen == 5 then
-		A1 = ADV.Grah5
-	elseif ADVGen == 6 then
-		A1 = ADV.Grah6
-	elseif ADVGen == 7 then
-		A1 = ADV.Grah7
-	elseif ADVGen == 8 then
-		A1 = ADV.Grah8
-	elseif ADVGen == 9 then
-		A1 = ADV.Grah9 
-	elseif ADVGen == 10 then
-		A1 = ADV.Grah10 
-		 	Player:Kick(A1)
-		end
-	end
+
 	
 	_G.CloseKey = "RightShift"
 	UIS.InputBegan:Connect(function(Key)
